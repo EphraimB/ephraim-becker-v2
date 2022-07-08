@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{% block title %}{% endblock %}</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap-5.2.0-beta1-dist/bootstrap-5.2.0-beta1-dist/css/bootstrap.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='wheelnav-1.8.0/raphael.min.js') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='wheelnav-1.8.0/raphael.icons.min.js') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='wheelnav-1.8.0/wheelnav.js') }}">
+    </head>
+    <body>
+        <nav>
+
+        </nav>
+        <header>
+            {% block header %}{% endblock %}
+        </header>
+        <main>
+            {% block main %}{% endblock %}
+        </main>
+
+        <script src="{{ url_for('static', filename='jquery-3.6.0.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='bootstrap-5.2.0-beta1-dist/bootstrap-5.2.0-beta1-dist/js/bootstrap.bundle.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+    </body>
+</html>
