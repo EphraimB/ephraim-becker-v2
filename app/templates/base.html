@@ -12,7 +12,14 @@
     </head>
     <body>
         <nav>
-
+            <div id="piemenu" data-wheelnav
+                data-wheelnav-colors="#011100"
+                data-wheelnav-slicepath="DonutSlice"
+                data-wheelnav-navangle="270"
+                data-wheelnav-titleheight="45"
+                data-wheelnav-init>
+                <div data-wheelnav-navitemicon="{{ url_for('static', filename='img/nav-icons/home.svg') }}"><a href="/">Home</a></div>
+            </div>
         </nav>
         <header>
             {% block header %}{% endblock %}
