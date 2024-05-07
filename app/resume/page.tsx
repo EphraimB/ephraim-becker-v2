@@ -72,6 +72,15 @@ export default function Resume() {
           NextJS
         </Typography>
         <Typography variant="body2" component="p">
+          ExpressJS
+        </Typography>
+        <Typography variant="body2" component="p">
+          Python
+        </Typography>
+        <Typography variant="body2" component="p">
+          Java
+        </Typography>
+        <Typography variant="body2" component="p">
           Blender
         </Typography>
         <Typography variant="body2" component="p">
