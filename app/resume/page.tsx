@@ -2,10 +2,11 @@ import Image from "next/image";
 import Typography from "@mui/material/Typography";
 import dayjs from "dayjs";
 import Grid from "@mui/material/Grid";
+import Paper from "@mui/material/Paper";
 
 export default function Resume() {
   return (
-    <Grid container sx={{ textAlign: "center" }}>
+    <Grid container spacing={2} sx={{ p: 2 }}>
       <Grid item xs={12}>
         <Image
           src="/ephraim-becker.jpg"
@@ -24,82 +25,56 @@ export default function Resume() {
       </Grid>
       <br />
       <br />
-      <Grid item xs={12}>
-        <Typography variant="h6" component="h4">
-          Professional Summary
-        </Typography>
+      <Grid item xs={12} lg={6}>
+        <Paper sx={{ p: 2, height: 150 }}>
+          <Typography variant="h6" component="h4">
+            Professional Summary
+          </Typography>
+          <br />
+          <Typography variant="body2" component="p">
+            Experienced developer with a demonstrated history of working in the
+            financial services industry. Skilled in HTML, CSS, JavaScript,
+            React, NextJS, Python, Java, and Blender, and Unity. Strong
+            engineering professional graduated from Ivdu.
+          </Typography>
+        </Paper>
       </Grid>
-      <Grid item xs={12}>
-        <Typography variant="body2" component="p">
-          Experienced developer with a demonstrated history of working in the
-          financial services industry. Skilled in HTML, CSS, JavaScript, React,
-          NextJS, Python, Java, and Blender, and Unity. Strong engineering
-          professional graduated from Ivdu.
-        </Typography>
+      <Grid item xs={12} lg={6}>
+        <Paper sx={{ p: 2, height: 150 }}>
+          <Typography variant="h6" component="h4">
+            Work History
+          </Typography>
+          <br />
+          <Typography variant="body2" component="p">
+            Working {dayjs().diff("2017-02-08", "year", true).toFixed(2)} years
+            at Junior Developer at PAAY from February 2017 to Present
+          </Typography>
+        </Paper>
       </Grid>
-      <br />
-      <br />
-      <Grid item xs={12}>
-        <Typography variant="h6" component="h4">
-          Work History
-        </Typography>
+      <Grid item xs={12} lg={6}>
+        <Paper sx={{ p: 2, height: 150 }}>
+          <Typography variant="h6" component="h4">
+            Skills
+          </Typography>
+          <br />
+          <Typography variant="body2" component="p">
+            HTML, CSS, JavaScript, React, NextJS, ExpressJS, Python, Java,
+            Blender, Unity
+          </Typography>
+        </Paper>
       </Grid>
-      <Grid item xs={12}>
-        <Typography variant="body2" component="p">
-          Working {dayjs().diff("2017-02-08", "year", true).toFixed(2)} years at
-          Junior Developer at PAAY from February 2017 to Present
-        </Typography>
-      </Grid>
-      <Grid item xs={12}>
-        <Typography variant="h6" component="h4">
-          Skills
-        </Typography>
-      </Grid>
-      <Grid item xs={12}>
-        <Typography variant="body2" component="p">
-          HTML
-        </Typography>
-        <Typography variant="body2" component="p">
-          CSS
-        </Typography>
-        <Typography variant="body2" component="p">
-          JavaScript
-        </Typography>
-        <Typography variant="body2" component="p">
-          React
-        </Typography>
-        <Typography variant="body2" component="p">
-          NextJS
-        </Typography>
-        <Typography variant="body2" component="p">
-          ExpressJS
-        </Typography>
-        <Typography variant="body2" component="p">
-          Python
-        </Typography>
-        <Typography variant="body2" component="p">
-          Java
-        </Typography>
-        <Typography variant="body2" component="p">
-          Blender
-        </Typography>
-        <Typography variant="body2" component="p">
-          Unity
-        </Typography>
-      </Grid>
-      <Grid item xs={12}>
-        <Typography variant="h6" component="h4">
-          Education
-        </Typography>
-      </Grid>
-      <Grid item xs={12}>
-        <Typography variant="body2" component="p">
-          Touro College for a Computer Science major from January 2020 to
-          January 2022
-        </Typography>
-        <Typography variant="body2" component="p">
-          Ivdu Upper School from 2014 to 2016
-        </Typography>
+      <Grid item xs={12} lg={6}>
+        <Paper sx={{ p: 2, height: 150 }}>
+          <Typography variant="h6" component="h4">
+            Education
+          </Typography>
+          <br />
+          <Typography variant="body2" component="p">
+            Went to Ivdu Upper School from 2014 to 2016 for High School and
+            Touro College for a Computer Science major from January 2020 to
+            January 2022 for college
+          </Typography>
+        </Paper>
       </Grid>
     </Grid>
   );
