@@ -12,7 +12,7 @@ export default function Portfolio() {
       <Typography variant="h2" component="h2" sx={{ textAlign: "center" }}>
         Portfolio
       </Typography>
-      <Grid container spacing={2} sx={{ m: 2 }}>
+      <Grid container spacing={2} sx={{ p: 2 }}>
         <Grid item xs={12} lg={3}>
           <Paper sx={{ p: 2 }}>
             <Image
@@ -133,6 +133,50 @@ export default function Portfolio() {
                 target="_blank"
               >
                 Click to download the prototype off GitHub
+              </Link>
+            </Typography>
+          </Paper>
+        </Grid>
+        <Grid item xs={12} lg={3}>
+          <Paper sx={{ p: 2 }}>
+            <Image
+              src="/blob-man-video-screenshot.png"
+              alt="Blob man video screenshot"
+              width={300}
+              height={200}
+            />
+            <Typography
+              variant="body2"
+              component="p"
+              sx={{ textAlign: "center" }}
+            >
+              Started work on it {dayjs("2024-03-01").format("MMMM DD, YYYY")}{" "}
+              and finished it {dayjs("2024-04-08").format("MMMM DD, YYYY")}
+            </Typography>
+            <Typography variant="h3" component="h3">
+              Blob man video
+            </Typography>
+            <Typography variant="body1" component="h4">
+              I made a blob man video in{" "}
+              <Link href="https://www.blender.org/" target="_blank">
+                Blender
+              </Link>{" "}
+              and 3D modeled the blob man and the walking animation guided by a
+              tutorial on{" "}
+              <Link href="https://www.udemy.com/" target="_blank">
+                Udemy
+              </Link>
+            </Typography>
+            <Typography
+              variant="body2"
+              component="p"
+              sx={{ textAlign: "center" }}
+            >
+              <Link
+                href="https://www.youtube.com/watch?v=G8un8IlF7_c"
+                target="_blank"
+              >
+                You can view the video on YouTube here
               </Link>
             </Typography>
           </Paper>
