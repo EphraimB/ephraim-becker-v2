@@ -46,7 +46,22 @@ export default function Resume() {
       </Grid>
       <Grid item xs={12}>
         <Typography variant="body2" component="p">
-          Working {dayjs().diff("2017-02-08", "year", true).toFixed(2)} years at Junior Developer at PAAY from February 2017 - Present
+          Working {dayjs().diff("2017-02-08", "year", true).toFixed(2)} years at
+          Junior Developer at PAAY from February 2017 - Present
+        </Typography>
+      </Grid>
+      <Grid item xs={12}>
+        <Typography variant="h6" component="h4">
+          Education
+        </Typography>
+      </Grid>
+      <Grid item xs={12}>
+        <Typography variant="body2" component="p">
+          Touro College for a Computer Science major from January 2020 - January
+          2022
+        </Typography>
+        <Typography variant="body2" component="p">
+          Ivdu Upper School from 2014 - 2016
         </Typography>
       </Grid>
     </Grid>
