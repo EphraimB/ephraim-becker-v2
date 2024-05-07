@@ -28,7 +28,7 @@ export default function Portfolio() {
             </Typography>
             <Typography variant="body1" component="h4">
               I made a Google Chrome extention that turns any website into the
-              LCARS interface. It didn't do a good job and abandoned it.
+              LCARS interface. It didn't do a good job and abandoned it. I might come back to it.
             </Typography>
             <Typography
               variant="body2"
