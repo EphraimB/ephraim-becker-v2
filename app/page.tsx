@@ -31,7 +31,7 @@ export default function Home() {
             src="/ephraim-becker.jpg"
             width={100}
             height={150}
-            alt="Picture of the Ephraim Becker"
+            alt="Picture of Ephraim Becker"
           />
           <Typography variant="h3" component="h3">
             Ephraim Becker
