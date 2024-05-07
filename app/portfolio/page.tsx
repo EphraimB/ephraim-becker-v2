@@ -7,6 +7,8 @@ import dayjs from "dayjs";
 import Box from "@mui/material/Box";
 
 export default function Portfolio() {
+  const cardHeight = 600;
+
   return (
     <Box>
       <Typography variant="h2" component="h2" sx={{ textAlign: "center" }}>
@@ -14,7 +16,7 @@ export default function Portfolio() {
       </Typography>
       <Grid container spacing={2} sx={{ p: 2 }}>
         <Grid item xs={12} lg={3}>
-          <Paper sx={{ p: 2 }}>
+          <Paper sx={{ p: 2, height: cardHeight }}>
             <Image
               src="/wizardc7-screenshot.gif"
               alt="Harry Potter currency converter screenshot"
@@ -55,7 +57,7 @@ export default function Portfolio() {
           </Paper>
         </Grid>
         <Grid item xs={12} lg={3}>
-          <Paper sx={{ p: 2 }}>
+          <Paper sx={{ p: 2, height: cardHeight, alignContent: "flex-end" }}>
             <Typography
               variant="body2"
               component="p"
@@ -84,7 +86,7 @@ export default function Portfolio() {
           </Paper>
         </Grid>
         <Grid item xs={12} lg={3}>
-          <Paper sx={{ p: 2 }}>
+          <Paper sx={{ p: 2, height: cardHeight }}>
             <Image
               src="/beaming-video-screenshot.png"
               alt="Beaming video screenshot"
@@ -126,7 +128,7 @@ export default function Portfolio() {
           </Paper>
         </Grid>
         <Grid item xs={12} lg={3}>
-          <Paper sx={{ p: 2 }}>
+          <Paper sx={{ p: 2, height: cardHeight }}>
             <Image
               src="/virtual-friend-screenshot.png"
               alt="Virtual friend app screenshot"
@@ -171,7 +173,7 @@ export default function Portfolio() {
           </Paper>
         </Grid>
         <Grid item xs={12} lg={3}>
-          <Paper sx={{ p: 2 }}>
+          <Paper sx={{ p: 2, height: cardHeight }}>
             <Image
               src="/budgeting-screenshot.png"
               alt="Budgeting app screenshot"
@@ -208,7 +210,7 @@ export default function Portfolio() {
           </Paper>
         </Grid>
         <Grid item xs={12} lg={3}>
-          <Paper sx={{ p: 2 }}>
+          <Paper sx={{ p: 2, height: cardHeight }}>
             <Image
               src="/blob-man-video-screenshot.png"
               alt="Blob man video screenshot"
