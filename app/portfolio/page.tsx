@@ -15,6 +15,34 @@ export default function Portfolio() {
       <Grid container spacing={2} sx={{ p: 2 }}>
         <Grid item xs={12} lg={3}>
           <Paper sx={{ p: 2 }}>
+            <Typography
+              variant="body2"
+              component="p"
+              sx={{ textAlign: "center" }}
+            >
+              Started work on it {dayjs("2016-04-09").format("MMMM DD, YYYY")}{" "}
+              and abandoned it {dayjs("2016-04-11").format("MMMM DD, YYYY")}
+            </Typography>
+            <Typography variant="h3" component="h3">
+              LCARS Google Chrome extention
+            </Typography>
+            <Typography variant="body1" component="h4">
+              I made a Google Chrome extention that turns any website into the
+              LCARS interface. It didn't do a good job and abandoned it.
+            </Typography>
+            <Typography
+              variant="body2"
+              component="p"
+              sx={{ textAlign: "center" }}
+            >
+              <Link href="https://github.com/EphraimB/LCARS" target="_blank">
+                You can download the extention here
+              </Link>
+            </Typography>
+          </Paper>
+        </Grid>
+        <Grid item xs={12} lg={3}>
+          <Paper sx={{ p: 2 }}>
             <Image
               src="/beaming-video-screenshot.png"
               alt="Beaming video screenshot"
