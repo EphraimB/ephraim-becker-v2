@@ -16,6 +16,48 @@ export default function Portfolio() {
         <Grid item xs={12} lg={3}>
           <Paper sx={{ p: 2 }}>
             <Image
+              src="/beaming-video-screenshot.png"
+              alt="Beaming video screenshot"
+              width={300}
+              height={200}
+            />
+            <Typography
+              variant="body2"
+              component="p"
+              sx={{ textAlign: "center" }}
+            >
+              Started work on it {dayjs("2016-10-26").format("MMMM DD, YYYY")}{" "}
+              and finished it {dayjs("2016-11-26").format("MMMM DD, YYYY")}
+            </Typography>
+            <Typography variant="h3" component="h3">
+              Beaming video
+            </Typography>
+            <Typography variant="body1" component="h4">
+              I made a beaming video in{" "}
+              <Link href="https://www.blender.org/" target="_blank">
+                Blender
+              </Link>{" "}
+              after one month of making it. I 3D modeled the transported
+              controls and made the effects all in Blender. I beamed from my
+              bedroom to my Ohel therapy office.
+            </Typography>
+            <Typography
+              variant="body2"
+              component="p"
+              sx={{ textAlign: "center" }}
+            >
+              <Link
+                href="https://www.youtube.com/watch?v=6ktNUS7dt0M"
+                target="_blank"
+              >
+                You can view the video on YouTube here
+              </Link>
+            </Typography>
+          </Paper>
+        </Grid>
+        <Grid item xs={12} lg={3}>
+          <Paper sx={{ p: 2 }}>
+            <Image
               src="/virtual-friend-screenshot.png"
               alt="Virtual friend app screenshot"
               width={300}
