@@ -18,15 +18,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <DrawerProvider>
-      <html lang="en">
-        <body className={inter.className}>
+    <html lang="en">
+      <body className={inter.className}>
+        <DrawerProvider>
           <GlobalAppBar />
           <br />
           <GlobalDrawer />
           {children}
-        </body>
-      </html>
-    </DrawerProvider>
+        </DrawerProvider>
+      </body>
+    </html>
   );
 }
