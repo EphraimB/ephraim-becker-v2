@@ -33,8 +33,8 @@ export default function Resume() {
         <Typography variant="body2" component="p">
           Experienced developer with a demonstrated history of working in the
           financial services industry. Skilled in HTML, CSS, JavaScript, React,
-          NextJS, Python, Java, and Blender. Strong engineering professional
-          graduated from Ivdu.
+          NextJS, Python, Java, and Blender, and Unity. Strong engineering
+          professional graduated from Ivdu.
         </Typography>
       </Grid>
       <br />
@@ -48,6 +48,34 @@ export default function Resume() {
         <Typography variant="body2" component="p">
           Working {dayjs().diff("2017-02-08", "year", true).toFixed(2)} years at
           Junior Developer at PAAY from February 2017 - Present
+        </Typography>
+      </Grid>
+      <Grid item xs={12}>
+        <Typography variant="h6" component="h4">
+          Skills
+        </Typography>
+      </Grid>
+      <Grid item xs={12}>
+        <Typography variant="body2" component="p">
+          HTML
+        </Typography>
+        <Typography variant="body2" component="p">
+          CSS
+        </Typography>
+        <Typography variant="body2" component="p">
+          JavaScript
+        </Typography>
+        <Typography variant="body2" component="p">
+          React
+        </Typography>
+        <Typography variant="body2" component="p">
+          NextJS
+        </Typography>
+        <Typography variant="body2" component="p">
+          Blender
+        </Typography>
+        <Typography variant="body2" component="p">
+          Unity
         </Typography>
       </Grid>
       <Grid item xs={12}>
