@@ -7,7 +7,7 @@ import Paper from "@mui/material/Paper";
 export default function Resume() {
   return (
     <Grid container spacing={2} sx={{ p: 2 }}>
-      <Grid item xs={12}>
+      <Grid item xs={12} sx={{ textAlign: "center" }}>
         <Image
           src="/ephraim-becker.jpg"
           alt="Image of Ephraim Becker"
@@ -18,7 +18,7 @@ export default function Resume() {
           Ephraim Becker
         </Typography>
       </Grid>
-      <Grid item xs={12}>
+      <Grid item xs={12} sx={{ textAlign: "center" }}>
         <Typography variant="body2" component="p">
           emb16@outlook.com | (516) 880-3474 | Cedarhurst, NY 11516
         </Typography>
