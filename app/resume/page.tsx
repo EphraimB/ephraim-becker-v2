@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Typography from "@mui/material/Typography";
-import Stack from "@mui/material/Stack";
+import dayjs from "dayjs";
 import Grid from "@mui/material/Grid";
 
 export default function Resume() {
@@ -33,8 +33,8 @@ export default function Resume() {
         <Typography variant="body2" component="p">
           Experienced developer with a demonstrated history of working in the
           financial services industry. Skilled in HTML, CSS, JavaScript, React,
-          NextJS, Python, Java, and Blender. Strong engineering professional graduated
-          from Ivdu.
+          NextJS, Python, Java, and Blender. Strong engineering professional
+          graduated from Ivdu.
         </Typography>
       </Grid>
       <br />
@@ -42,6 +42,11 @@ export default function Resume() {
       <Grid item xs={12}>
         <Typography variant="h6" component="h4">
           Work History
+        </Typography>
+      </Grid>
+      <Grid item xs={12}>
+        <Typography variant="body2" component="p">
+          Working {dayjs().diff("2017-02-08", "year", true).toFixed(2)} years at Junior Developer at PAAY from February 2017 - Present
         </Typography>
       </Grid>
     </Grid>
