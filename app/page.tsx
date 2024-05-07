@@ -3,6 +3,7 @@ import Container from "@mui/material/Container";
 import styles from "./page.module.css";
 import { Typography } from "@mui/material";
 import dayjs from "dayjs";
+import Image from "next/image";
 
 export default function Home() {
   const birthdate = "1996-07-19";
@@ -12,7 +13,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <Container
-        maxWidth="sm"
+        maxWidth="lg"
         sx={{
           height: "100vh",
           display: "flex",
@@ -26,6 +27,12 @@ export default function Home() {
             textAlign: "center",
           }}
         >
+          <Image
+            src="/ephraim-becker.jpg"
+            width={100}
+            height={150}
+            alt="Picture of the Ephraim Becker"
+          />
           <Typography variant="h3" component="h3">
             Ephraim Becker
           </Typography>
