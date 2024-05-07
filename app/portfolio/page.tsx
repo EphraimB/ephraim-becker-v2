@@ -15,12 +15,24 @@ export default function Portfolio() {
       <Grid container spacing={2} sx={{ p: 2 }}>
         <Grid item xs={12} lg={3}>
           <Paper sx={{ p: 2 }}>
+            <Image
+              src="/wizardc7-screenshot.gif"
+              alt="Harry Potter currency converter screenshot"
+              width={100}
+              height={100}
+            />
+            <Image
+              src="/wizardc7-color-screenshot.gif"
+              alt="Harry Potter currency converter color screenshot"
+              width={200}
+              height={200}
+            />
             <Typography
               variant="body2"
               component="p"
               sx={{ textAlign: "center" }}
             >
-              Finished it on {dayjs("2014-11-11").format("MMMM DD, YYYY")}
+              Finished it on {dayjs("2014-09-01").format("MMMM DD, YYYY")}
             </Typography>
             <Typography variant="h3" component="h3">
               Harry Potter currency converter
