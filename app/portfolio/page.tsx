@@ -43,7 +43,7 @@ export default function Portfolio() {
               I made a Harry Potter currency converter for the Ti-84 Plus
               graphing calculator that converts between Dollars and Gallions and
               vice versa. I created a lot of versions of it. I coded it in Ti
-              Basic and then tried Assembly but couldn't handle it.
+              Basic and then tried Assembly but couldn&apos;t handle it.
             </Typography>
             <Typography
               variant="body2"
@@ -71,8 +71,8 @@ export default function Portfolio() {
             </Typography>
             <Typography variant="body1" component="h4">
               I made a Google Chrome extention that turns any website into the
-              LCARS interface. It didn't do a good job and abandoned it. I might
-              come back to it.
+              LCARS interface. It didn&apos;t do a good job and abandoned it. I
+              might come back to it.
             </Typography>
             <Typography
               variant="body2"
