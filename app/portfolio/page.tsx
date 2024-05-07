@@ -20,6 +20,35 @@ export default function Portfolio() {
               component="p"
               sx={{ textAlign: "center" }}
             >
+              Finished it on {dayjs("2014-11-11").format("MMMM DD, YYYY")}
+            </Typography>
+            <Typography variant="h3" component="h3">
+              Harry Potter currency converter
+            </Typography>
+            <Typography variant="body1" component="h4">
+              I made a Harry Potter currency converter for the Ti-84 Plus
+              graphing calculator that converts between Dollars and Gallions and
+              vice versa. I created a lot of versions of it. I coded it in Ti
+              Basic and then tried Assembly but couldn't handle it.
+            </Typography>
+            <Typography
+              variant="body2"
+              component="p"
+              sx={{ textAlign: "center" }}
+            >
+              <Link href="/wizardc.zip">
+                You can download the latest completed version here. Version 7.3
+              </Link>
+            </Typography>
+          </Paper>
+        </Grid>
+        <Grid item xs={12} lg={3}>
+          <Paper sx={{ p: 2 }}>
+            <Typography
+              variant="body2"
+              component="p"
+              sx={{ textAlign: "center" }}
+            >
               Started work on it {dayjs("2016-04-09").format("MMMM DD, YYYY")}{" "}
               and abandoned it {dayjs("2016-04-11").format("MMMM DD, YYYY")}
             </Typography>
@@ -28,7 +57,8 @@ export default function Portfolio() {
             </Typography>
             <Typography variant="body1" component="h4">
               I made a Google Chrome extention that turns any website into the
-              LCARS interface. It didn't do a good job and abandoned it. I might come back to it.
+              LCARS interface. It didn't do a good job and abandoned it. I might
+              come back to it.
             </Typography>
             <Typography
               variant="body2"
@@ -178,8 +208,7 @@ export default function Portfolio() {
               component="p"
               sx={{ textAlign: "center" }}
             >
-              Started work on it {dayjs("2024-03-01").format("MMMM DD, YYYY")}{" "}
-              and finished it {dayjs("2024-04-08").format("MMMM DD, YYYY")}
+              Finished it {dayjs("2024-04-08").format("MMMM DD, YYYY")}
             </Typography>
             <Typography variant="h3" component="h3">
               Blob man video
