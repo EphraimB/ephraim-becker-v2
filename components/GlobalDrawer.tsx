@@ -10,9 +10,9 @@ import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
-import InboxIcon from "@mui/icons-material/MoveToInbox";
-import MailIcon from "@mui/icons-material/Mail";
+import { Home } from "@mui/icons-material";
 import { useDrawer } from "../context/DrawerContext";
+import Link from "next/link";
 
 export default function GlobalDrawer() {
   const { isOpen, setIsOpen } = useDrawer();
@@ -26,16 +26,44 @@ export default function GlobalDrawer() {
           onClick={() => setIsOpen(false)}
         >
           <List>
-            {["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
-              <ListItem key={text} disablePadding>
+            <Link
+              href="/"
+              as="/"
+              style={{ color: "initial", textDecoration: "none" }}
+            >
+              <ListItem disablePadding>
                 <ListItemButton>
                   <ListItemIcon>
-                    {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                    <Home />
                   </ListItemIcon>
-                  <ListItemText primary={text} />
+                  <ListItemText primary="Home" />
                 </ListItemButton>
               </ListItem>
-            ))}
+            </Link>
+            <Link
+              href="/portfolio/"
+              as="/portfolio/"
+              style={{ color: "initial", textDecoration: "none" }}
+            >
+              <ListItem disablePadding>
+                <ListItemButton>
+                  <ListItemIcon></ListItemIcon>
+                  <ListItemText primary="Portfolio" />
+                </ListItemButton>
+              </ListItem>
+            </Link>
+            <Link
+              href="/resume/"
+              as="/resume/"
+              style={{ color: "initial", textDecoration: "none" }}
+            >
+              <ListItem disablePadding>
+                <ListItemButton>
+                  <ListItemIcon></ListItemIcon>
+                  <ListItemText primary="Resume" />
+                </ListItemButton>
+              </ListItem>
+            </Link>
           </List>
         </Box>
       </Drawer>
