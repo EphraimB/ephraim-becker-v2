@@ -41,7 +41,8 @@ export default function Resume() {
         <Typography variant="body2" component="p" sx={{ width: 500 }}>
           Experienced developer with a demonstrated history of working in the
           financial services industry. Skilled in HTML, CSS, JavaScript, React,
-          and NextJS. Strong engineering professional graduated from Ivdu.
+          NextJS, Python, and Java. Strong engineering professional graduated
+          from Ivdu.
         </Typography>
       </Stack>
     </Box>
