@@ -46,6 +46,10 @@ export default function Home() {
             {dayjs(birthdate).format("MMMM DD, YYYY")}
           </Typography>
           <Typography>
+            <span style={{ fontWeight: "bold" }}>Diagnosis: </span>
+            Autism, ADHD
+          </Typography>
+          <Typography>
             <span style={{ fontWeight: "bold" }}>Interests: </span>
             Technology, Astronomy, Sci-fi/fantasy movies, Trains
           </Typography>
