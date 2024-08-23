@@ -46,7 +46,7 @@ export default function Home() {
           </Typography>
           <Typography>
             <span style={{ fontWeight: "bold" }}>Interests: </span>
-            Technology, Astronomy, Sci-fi/fantasy movies, Trains
+            Technology, Sci-fi/fantasy movies, Trains
           </Typography>
           <Typography>
             <span style={{ fontWeight: "bold" }}>Location: </span>
