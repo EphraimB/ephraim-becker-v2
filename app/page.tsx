@@ -5,12 +5,9 @@ import { Stack, Typography } from "@mui/material";
 import dayjs from "dayjs";
 import Image from "next/image";
 import Link from "next/link";
+import AgeComponent from "@/components/Age";
 
 export default function Home() {
-  const birthdate = "1996-07-19";
-
-  const age = dayjs().diff(birthdate, "year");
-
   return (
     <main className={styles.main}>
       <Container
@@ -38,13 +35,10 @@ export default function Home() {
             Ephraim Becker
           </Typography>
           <br />
-          <Typography>
-            <span style={{ fontWeight: "bold" }}>Age: </span>
-            {age}
-          </Typography>
+          <AgeComponent />
           <Typography>
             <span style={{ fontWeight: "bold" }}>Birthdate: </span>
-            {dayjs(birthdate).format("MMMM DD, YYYY")}
+            {dayjs("1996-07-19").format("MMMM DD, YYYY")}
           </Typography>
           <Typography>
             <span style={{ fontWeight: "bold" }}>Diagnosis: </span>
