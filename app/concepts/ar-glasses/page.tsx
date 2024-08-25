@@ -60,7 +60,7 @@ export default function ARGlasses() {
       </motion.div>
       <motion.div>
         <Typography component="p" variant="subtitle1">
-          And that's only the beginning. More to come..
+          And that&apos;s only the beginning. More to come..
         </Typography>
       </motion.div>
     </Box>
