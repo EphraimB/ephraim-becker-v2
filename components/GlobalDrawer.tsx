@@ -64,6 +64,18 @@ export default function GlobalDrawer() {
                 </ListItemButton>
               </ListItem>
             </Link>
+            <Link
+              href="/concepts/"
+              as="/concepts/"
+              style={{ color: "initial", textDecoration: "none" }}
+            >
+              <ListItem disablePadding>
+                <ListItemButton>
+                  <ListItemIcon></ListItemIcon>
+                  <ListItemText primary="Concepts" />
+                </ListItemButton>
+              </ListItem>
+            </Link>
           </List>
         </Box>
       </Drawer>
