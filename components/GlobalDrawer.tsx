@@ -53,18 +53,6 @@ export default function GlobalDrawer() {
               </ListItem>
             </Link>
             <Link
-              href="/resume/"
-              as="/resume/"
-              style={{ color: "initial", textDecoration: "none" }}
-            >
-              <ListItem disablePadding>
-                <ListItemButton>
-                  <ListItemIcon></ListItemIcon>
-                  <ListItemText primary="Resume" />
-                </ListItemButton>
-              </ListItem>
-            </Link>
-            <Link
               href="/concepts/"
               as="/concepts/"
               style={{ color: "initial", textDecoration: "none" }}
