@@ -1,16 +1,13 @@
 import React from "react";
 import {
-  Paper,
-  Typography,
   TextField,
-  Button,
   Box,
   FormControl,
   InputLabel,
   Select,
   MenuItem,
 } from "@mui/material";
-import { Player, Team } from "@/app/types";
+import { Team } from "@/app/types";
 
 export default function TeamForm({
   team,

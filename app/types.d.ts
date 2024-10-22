@@ -1,6 +1,5 @@
 export interface Player {
-  firstName: string;
-  lastName: string;
+  name: string;
 }
 
 export interface Team {
