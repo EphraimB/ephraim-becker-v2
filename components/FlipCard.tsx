@@ -62,10 +62,9 @@ export default function FlipCard({
               <Image
                 src={image.src}
                 alt={image.description}
-                width={300}
-                height={200}
+                width={image.size ? image.size.width : 300}
+                height={image.size ? image.size.height : 200}
               />
-              <br />
             </span>
           ))}
           <Typography
