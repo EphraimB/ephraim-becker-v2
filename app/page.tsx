@@ -41,12 +41,8 @@ export default function Home() {
             {dayjs("1996-07-19").format("MMMM DD, YYYY")}
           </Typography>
           <Typography>
-            <span style={{ fontWeight: "bold" }}>Diagnosis: </span>
-            Autism, ADHD
-          </Typography>
-          <Typography>
             <span style={{ fontWeight: "bold" }}>Interests: </span>
-            Technology, Sci-fi/fantasy movies, Trains
+            Technology, Sci-fi/fantasy movies
           </Typography>
           <Typography>
             <span style={{ fontWeight: "bold" }}>Location: </span>
