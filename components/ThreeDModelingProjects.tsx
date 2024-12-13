@@ -4,7 +4,7 @@ import dayjs from "dayjs";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function DesignProjects() {
+export default function ThreeDModelingProjects() {
   const cardHeight = 600;
 
   return (
