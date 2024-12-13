@@ -3,14 +3,32 @@ import Grid from "@mui/material/Grid2";
 import dayjs from "dayjs";
 import Image from "next/image";
 import Link from "next/link";
+import FlipCard from "./FlipCard";
 
 export default function WebDevelopmentProjects() {
-  const cardHeight = 600;
-
   return (
     <Grid container spacing={2} sx={{ p: 2 }}>
       <Grid size={{ xs: 12, lg: 3 }}>
-        <Paper sx={{ p: 2, height: cardHeight }}>
+        <FlipCard
+          started="2015-11-10"
+          images={[
+            {
+              src: "/virtual-friend-screenshot.png",
+              description: "Virtual friend app screenshot",
+            },
+          ]}
+          title="Virtual Friend app"
+          front="A web app that you can interact with a virtual friend. This was
+            before ChatGPT came out."
+          back="Under construction"
+          links={[
+            {
+              src: "https://github.com/EphraimB/budgeting",
+              description: "Click to download the prototype off GitHub",
+            },
+          ]}
+        />
+        {/* <Paper sx={{ p: 2, height: cardHeight }}>
           <Image
             src="/virtual-friend-screenshot.png"
             alt="Virtual friend app screenshot"
@@ -96,7 +114,7 @@ export default function WebDevelopmentProjects() {
               Click to download the prototype off GitHub
             </Link>
           </Typography>
-        </Paper>
+        </Paper> */}
       </Grid>
     </Grid>
   );
