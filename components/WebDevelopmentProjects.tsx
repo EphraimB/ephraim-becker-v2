@@ -18,11 +18,17 @@ export default function WebDevelopmentProjects() {
             height={200}
           />
           <Typography
-            variant="body2"
+            variant="body1"
             component="p"
-            sx={{ textAlign: "center" }}
+            sx={{ textAlign: "center", fontWeight: "bold" }}
           >
             Started work on it {dayjs("2015-11-10").format("MMMM DD, YYYY")}.
+          </Typography>
+          <Typography
+            variant="body2"
+            component="p"
+            sx={{ backgroundColor: "yellow", p: 1 }}
+          >
             While this project was left incomplete due to shifting priorities
             and personal challenges, I gained valuable experience working with
             html, css, and JavaScript and developed new problem-solving skills.
@@ -30,7 +36,7 @@ export default function WebDevelopmentProjects() {
             the web or in Virtual Reality and maybe even connected to AI
             chatbots like ChatGPT.
           </Typography>
-          <Typography variant="h3" component="h3">
+          <Typography variant="h4" component="h3">
             Virtual Friend app
           </Typography>
           <Typography variant="body1" component="h4">
