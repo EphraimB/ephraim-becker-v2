@@ -1,5 +1,5 @@
 import Paper from "@mui/material/Paper";
-import Grid from "@mui/material/Grid";
+import Grid from "@mui/material/Grid2";
 import Typography from "@mui/material/Typography";
 import Image from "next/image";
 import Link from "next/link";
@@ -15,7 +15,7 @@ export default function Portfolio() {
         Portfolio
       </Typography>
       <Grid container spacing={2} sx={{ p: 2 }}>
-        <Grid item xs={12} lg={3}>
+        <Grid size={{ xs: 12, lg: 3 }}>
           <Paper sx={{ p: 2, height: cardHeight }}>
             <Image
               src="/wizardc7-screenshot.gif"
@@ -56,7 +56,7 @@ export default function Portfolio() {
             </Typography>
           </Paper>
         </Grid>
-        <Grid item xs={12} lg={3}>
+        <Grid size={{ xs: 12, lg: 3 }}>
           <Paper sx={{ p: 2, height: cardHeight, alignContent: "flex-end" }}>
             <Typography
               variant="body2"
@@ -85,7 +85,7 @@ export default function Portfolio() {
             </Typography>
           </Paper>
         </Grid>
-        <Grid item xs={12} lg={3}>
+        <Grid size={{ xs: 12, lg: 3 }}>
           <Paper sx={{ p: 2, height: cardHeight }}>
             <Image
               src="/beaming-video-screenshot.png"
@@ -127,7 +127,7 @@ export default function Portfolio() {
             </Typography>
           </Paper>
         </Grid>
-        <Grid item xs={12} lg={3}>
+        <Grid size={{ xs: 12, lg: 3 }}>
           <Paper sx={{ p: 2, height: cardHeight }}>
             <Image
               src="/virtual-friend-screenshot.png"
@@ -172,7 +172,7 @@ export default function Portfolio() {
             </Typography>
           </Paper>
         </Grid>
-        <Grid item xs={12} lg={3}>
+        <Grid size={{ xs: 12, lg: 3 }}>
           <Paper sx={{ p: 2, height: cardHeight }}>
             <Image
               src="/budgeting-screenshot.png"
@@ -209,7 +209,7 @@ export default function Portfolio() {
             </Typography>
           </Paper>
         </Grid>
-        <Grid item xs={12} lg={3}>
+        <Grid size={{ xs: 12, lg: 3 }}>
           <Paper sx={{ p: 2, height: cardHeight }}>
             <Image
               src="/blob-man-video-screenshot.png"
