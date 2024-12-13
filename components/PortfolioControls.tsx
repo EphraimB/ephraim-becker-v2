@@ -15,7 +15,7 @@ import DesignProjects from "./DesignProjects";
 import AppsProjects from "./AppsProjects";
 
 export default function PortfolioControls() {
-  const [category, setCategory] = useState("");
+  const [category, setCategory] = useState("0");
 
   const handleChange = (event: SelectChangeEvent<string>) => {
     setCategory(event.target.value);
