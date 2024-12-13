@@ -12,7 +12,8 @@ import {
 } from "@mui/material";
 import WebDevelopmentProjects from "./WebDevelopmentProjects";
 import DesignProjects from "./DesignProjects";
-import AppsProjects from "./AppsProjects";
+import CalculatorProjects from "./CalculatorProjects";
+import XRProjects from "./XRProjects";
 
 export default function PortfolioControls() {
   const [category, setCategory] = useState("0");
@@ -34,7 +35,8 @@ export default function PortfolioControls() {
             <Select value={category} onChange={handleChange} label="Category">
               <MenuItem value="0">Web Development</MenuItem>
               <MenuItem value="1">Design</MenuItem>
-              <MenuItem value="2">Apps</MenuItem>
+              <MenuItem value="2">Calculator</MenuItem>
+              <MenuItem value="3">XR</MenuItem>
             </Select>
           </FormControl>
         </Box>
@@ -46,7 +48,9 @@ export default function PortfolioControls() {
       ) : parseInt(category) === 1 ? (
         <DesignProjects />
       ) : parseInt(category) === 2 ? (
-        <AppsProjects />
+        <CalculatorProjects />
+      ) : parseInt(category) === 3 ? (
+        <XRProjects />
       ) : null}
     </Stack>
   );
