@@ -105,9 +105,13 @@ export default function FlipCard({
             sx={{ textAlign: "center" }}
           >
             {links.map((link, index) => (
-              <Link key={index} href={link.src} target="_blank">
-                {link.description}
-              </Link>
+              <>
+                <Link key={index} href={link.src} target="_blank">
+                  {link.description}
+                </Link>
+                <br />
+                <br />
+              </>
             ))}
           </Typography>
         </div>

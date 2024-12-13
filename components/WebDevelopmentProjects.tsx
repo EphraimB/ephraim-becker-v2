@@ -22,6 +22,10 @@ export default function WebDevelopmentProjects() {
               src: "https://github.com/EphraimB/budgeting",
               description: "Click to download the prototype off GitHub",
             },
+            {
+              src: "https://ephraimb.github.io/Virtual-Friend/",
+              description: "You can also view it live here",
+            },
           ]}
         />
       </Grid>
