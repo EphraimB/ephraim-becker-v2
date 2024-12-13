@@ -80,7 +80,7 @@ export default function FlipCard({
             sx={{ textAlign: "center", fontWeight: "bold" }}
           >
             {" "}
-            Ended {dayjs(ended).format("MMMM DD, YYYY")}.
+            {ended ? 'Ended {dayjs(ended).format("MMMM DD, YYYY")}.' : null}
           </Typography>
           <Typography component="h3" variant="h3">
             {title}
