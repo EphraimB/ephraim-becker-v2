@@ -42,8 +42,8 @@ export default function Portfolio() {
             <Typography variant="body1" component="h4">
               I made a Harry Potter currency converter for the Ti-84 Plus
               graphing calculator that converts between Dollars and Gallions and
-              vice versa. I created a lot of versions of it. I coded it in Ti
-              Basic and then tried Assembly but couldn&apos;t handle it.
+              vice versa. I created a lot of versions of it and coded it in Ti
+              Basic.
             </Typography>
             <Typography
               variant="body2"
@@ -56,7 +56,7 @@ export default function Portfolio() {
             </Typography>
           </Paper>
         </Grid>
-        <Grid size={{ xs: 12, lg: 3 }}>
+        {/* <Grid size={{ xs: 12, lg: 3 }}>
           <Paper sx={{ p: 2, height: cardHeight, alignContent: "flex-end" }}>
             <Typography
               variant="body2"
@@ -71,8 +71,7 @@ export default function Portfolio() {
             </Typography>
             <Typography variant="body1" component="h4">
               I made a Google Chrome extention that turns any website into the
-              LCARS interface. It didn&apos;t do a good job and abandoned it. I
-              might come back to it.
+              LCARS interface.
             </Typography>
             <Typography
               variant="body2"
@@ -84,7 +83,7 @@ export default function Portfolio() {
               </Link>
             </Typography>
           </Paper>
-        </Grid>
+        </Grid> */}
         <Grid size={{ xs: 12, lg: 3 }}>
           <Paper sx={{ p: 2, height: cardHeight }}>
             <Image
@@ -111,7 +110,7 @@ export default function Portfolio() {
               </Link>{" "}
               after one month of making it. I 3D modeled the transported
               controls and made the effects all in Blender. I beamed from my
-              bedroom to my Ohel therapy office.
+              bedroom to my therapy office.
             </Typography>
             <Typography
               variant="body2"
@@ -140,9 +139,13 @@ export default function Portfolio() {
               component="p"
               sx={{ textAlign: "center" }}
             >
-              Started work on it {dayjs("2015-11-10").format("MMMM DD, YYYY")}{" "}
-              but gave up {dayjs("2021-08-27").format("MMMM DD, YYYY")} when I
-              converted it to Python without thinking. I then abandoned it.
+              Started work on it {dayjs("2015-11-10").format("MMMM DD, YYYY")}.
+              While this project was left incomplete due to shifting priorities
+              and personal challenges, I gained valuable experience working with
+              html, css, and JavaScript and developed new problem-solving
+              skills. I plan to revisit and improve this project in the future
+              whether on the web or in Virtual Reality and maybe even connected
+              to AI chatbots like ChatGPT.
             </Typography>
             <Typography variant="h3" component="h3">
               Virtual Friend app
@@ -193,7 +196,7 @@ export default function Portfolio() {
             </Typography>
             <Typography variant="body1" component="h4">
               A web app that you can input all my habits and generates
-              transactions for any date range based off the habits you inputted
+              transactions for any date range based off the habits you input
             </Typography>
             <Typography
               variant="body2"
