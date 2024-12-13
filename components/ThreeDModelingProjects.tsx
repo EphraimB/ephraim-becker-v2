@@ -1,13 +1,7 @@
-import { Paper, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
-import dayjs from "dayjs";
-import Image from "next/image";
-import Link from "next/link";
 import FlipCard from "./FlipCard";
 
 export default function ThreeDModelingProjects() {
-  const cardHeight = 600;
-
   return (
     <Grid container spacing={2} sx={{ p: 2 }}>
       <Grid size={{ xs: 12, lg: 3 }}>

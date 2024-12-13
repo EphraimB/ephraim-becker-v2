@@ -23,7 +23,7 @@ export default function FlipCard({
   title: string;
   front: string;
   back: string;
-  links: LinkType[];
+  links?: LinkType[];
 }) {
   const [flipped, setFlipped] = useState(false);
 
@@ -83,7 +83,7 @@ export default function FlipCard({
           >
             {ended ? `Ended ${dayjs(ended).format("MMMM DD, YYYY")}.` : null}
           </Typography>
-          <Typography component="h3" variant="h3">
+          <Typography component="h3" variant="h4">
             {title}
           </Typography>
           <motion.div
@@ -106,14 +106,15 @@ export default function FlipCard({
             component="p"
             sx={{ textAlign: "center" }}
           >
-            {links.map((link) => (
-              <span key={link.src}>
-                <Link href={link.src} target="_blank">
-                  {link.description}
-                </Link>
-                <br />
-              </span>
-            ))}
+            {links &&
+              links.map((link) => (
+                <span key={link.src}>
+                  <Link href={link.src} target="_blank">
+                    {link.description}
+                  </Link>
+                  <br />
+                </span>
+              ))}
           </Typography>
         </div>
         <div
