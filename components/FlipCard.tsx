@@ -17,7 +17,7 @@ export default function FlipCard({
   back,
   links,
 }: {
-  started: string;
+  started?: string;
   ended?: string;
   images: ImageType[];
   title: string;
@@ -72,15 +72,16 @@ export default function FlipCard({
             component="p"
             sx={{ textAlign: "center", fontWeight: "bold" }}
           >
-            Started {dayjs(started).format("MMMM DD, YYYY")}.
+            {started
+              ? `Started ${dayjs(started).format("MMMM DD, YYYY")}.`
+              : null}
           </Typography>
           <Typography
             variant="body1"
             component="p"
             sx={{ textAlign: "center", fontWeight: "bold" }}
           >
-            {" "}
-            {ended ? 'Ended {dayjs(ended).format("MMMM DD, YYYY")}.' : null}
+            {ended ? `Ended ${dayjs(ended).format("MMMM DD, YYYY")}.` : null}
           </Typography>
           <Typography component="h3" variant="h3">
             {title}
