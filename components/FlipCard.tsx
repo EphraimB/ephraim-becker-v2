@@ -58,14 +58,15 @@ export default function FlipCard({
           }}
         >
           {images.map((image, index) => (
-            <div key={index} className="image-wrapper">
+            <span key={index} className="image-wrapper">
               <Image
                 src={image.src}
                 alt={image.description}
                 width={300}
                 height={200}
               />
-            </div>
+              <br />
+            </span>
           ))}
           <Typography
             variant="body1"
@@ -99,19 +100,20 @@ export default function FlipCard({
               {front}
             </Typography>
           </motion.div>
+          <br />
+          <br />
           <Typography
             variant="body2"
             component="p"
             sx={{ textAlign: "center" }}
           >
-            {links.map((link, index) => (
-              <>
-                <Link key={index} href={link.src} target="_blank">
+            {links.map((link) => (
+              <span key={link.src}>
+                <Link href={link.src} target="_blank">
                   {link.description}
                 </Link>
                 <br />
-                <br />
-              </>
+              </span>
             ))}
           </Typography>
         </div>
