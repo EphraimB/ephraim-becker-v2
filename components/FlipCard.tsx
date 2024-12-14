@@ -120,7 +120,7 @@ export default function FlipCard({ data }: { data: Project }) {
           <br />
           <br />
           <Typography component="p" variant="body2">
-            Under construction
+            Technologies used: {data.technologies}
           </Typography>
         </div>
       </motion.div>

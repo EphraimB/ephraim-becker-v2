@@ -4,6 +4,7 @@
         "category": "Web development",
         "title": "Virtual Friend app",
         "description": "A web app that you can interact with a virtual friend. This was before ChatGPT came out.",
+        "technologies": "HTML, CSS, and JavaScript",
         "images": [
             {
                 "src": "/virtual-friend-screenshot.png",
@@ -28,6 +29,7 @@
         "category": "Web development",
         "title": "Budgeting app",
         "description": "A web app that you can input all my habits and generates transactions for any date range based off the habits you input.",
+        "technologies": "ExpressJS, Postgres, NextJS",
         "images": [
             {
                 "src": "/budgeting-screenshot.png",
@@ -48,6 +50,7 @@
         "category": "3D modeling",
         "title": "Beaming video",
         "description": "I made a beaming video in Blender after one month of making it. I 3D modeled the transported controls and made the effects all in Blender. I beamed from my bedroom to my therapy office.",
+        "technologies": "Blender",
         "images": [
             {
                 "src": "/beaming-video-screenshot.png",
@@ -68,6 +71,7 @@
         "category": "3D modeling",
         "title": "Blob man video",
         "description": "I made a blob man video in Blender and 3D modeled the blob man and the walking animation guided by a tutorial on Udemy",
+        "technologies": "Blender",
         "images": [
             {
                 "src": "/blob-man-video-screenshot.png",
@@ -88,6 +92,7 @@
         "category": "Calculator apps",
         "title": "Harry Potter currency converter",
         "description": "I made a Harry Potter currency converter for the Ti-84 Plus graphing calculator that converts between Dollars and Gallions and vice versa. I created a lot of versions of it and coded it in Ti Basic.",
+        "technologies": "Ti Basic",
         "images": [
             {
                 "src": "/wizardc7-screenshot.gif",
@@ -120,6 +125,7 @@
         "category": "VR development",
         "title": "Beautiful Mind - VR Teleportation Watch Interface",
         "description": "Collaborated on the Beautiful Mind VR app, contributing to the design and implementation of a teleportation watch interface. This feature allowed users to navigate virtual environments seamlessly through an intuitive spatial UI. The project deepened my experience with immersive user interactions and highlighted the potential of VR for innovative solutions. Technologies used included Unity and C#.",
+        "technologies": "Unity, C#",
         "images": [
             {
                 "src": "/beautiful-mind-vr-app.png",

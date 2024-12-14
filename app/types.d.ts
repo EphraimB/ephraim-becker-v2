@@ -19,6 +19,7 @@ export interface Project {
   category: string;
   title: string;
   description: string;
+  technologies: string;
   images: ImageType[] | null;
   links: LinkType[] | null;
   started: string | null;
