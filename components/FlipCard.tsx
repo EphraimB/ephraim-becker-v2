@@ -18,7 +18,17 @@ export default function FlipCard({ data }: { data: Project }) {
   const cardHeight = 600;
 
   return (
-    <Paper sx={{ p: 2, height: cardHeight }}>
+    <Paper
+      sx={{
+        p: 2,
+        height: cardHeight,
+        "&:hover": {
+          boxShadow: "0 0 10px rgba(0, 0, 0, 0.2)",
+          transform: "translateY(-5px) scale(1.05)",
+          transition: "all 0.3s ease",
+        },
+      }}
+    >
       <IconButton onClick={toggleFlip}>
         {flipped ? <FlipToFrontIcon /> : <FlipToBackIcon />}
       </IconButton>
