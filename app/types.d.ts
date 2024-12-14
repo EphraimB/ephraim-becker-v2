@@ -21,6 +21,7 @@ export interface Project {
   description: string;
   technologies: string;
   details: string;
+  takeaways: string;
   images: ImageType[] | null;
   links: LinkType[] | null;
   started: string | null;

@@ -127,6 +127,11 @@ export default function FlipCard({ data }: { data: Project }) {
           <Typography component="p" variant="body2">
             Project details: {data.details}
           </Typography>
+          <br />
+          <br />
+          <Typography component="p" variant="body2">
+            Key takeaways: {data.takeaways}
+          </Typography>
         </div>
       </motion.div>
     </Paper>
