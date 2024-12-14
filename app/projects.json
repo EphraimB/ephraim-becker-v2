@@ -4,6 +4,7 @@
         "category": "Web development",
         "status": {
             "text": "On hold",
+            "reason": "prioritizing mental health and well-being",
             "color": "orange"
         },
         "title": "Virtual Friend app",
@@ -35,6 +36,7 @@
         "category": "Web development",
         "status": {
             "text": "On hold",
+            "reason": "focusing on academic commitments",
             "color": "orange"
         },
         "title": "Budgeting app",
@@ -62,6 +64,7 @@
         "category": "3D modeling",
         "status": {
             "text": "Finished",
+            "reason": null,
             "color": "green"
         },
         "title": "Beaming video",
@@ -89,6 +92,7 @@
         "category": "3D modeling",
         "status": {
             "text": "Finished",
+            "reason": null,
             "color": "green"
         },
         "title": "Blob man video",
@@ -116,6 +120,7 @@
         "category": "Calculator apps",
         "status": {
             "text": "Finished",
+            "reason": null,
             "color": "green"
         },
         "title": "Harry Potter currency converter",
@@ -155,6 +160,7 @@
         "category": "VR development",
         "status": {
             "text": "Finished",
+            "reason": null,
             "color": "green"
         },
         "title": "Beautiful Mind app",

@@ -40,6 +40,14 @@ export default function FlipCard({ data }: { data: Project }) {
           </Box>
         )}
       </Stack>
+      {data.status.reason && (
+        <Typography
+          variant="body2"
+          sx={{ textAlign: "center", backgroundColor: data.status.color }}
+        >
+          {data.status.text} due to {data.status.reason}
+        </Typography>
+      )}
       <motion.div
         style={{
           transformStyle: "preserve-3d",
