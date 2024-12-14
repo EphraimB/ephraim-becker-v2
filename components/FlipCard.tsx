@@ -1,4 +1,4 @@
-import { ImageType, LinkType } from "@/app/types";
+import { Project } from "@/app/types";
 import { IconButton, Paper, Typography } from "@mui/material";
 import dayjs from "dayjs";
 import { motion } from "framer-motion";
@@ -8,23 +8,7 @@ import { useState } from "react";
 import FlipToBackIcon from "@mui/icons-material/FlipToBack";
 import FlipToFrontIcon from "@mui/icons-material/FlipToFront";
 
-export default function FlipCard({
-  started,
-  ended,
-  images,
-  title,
-  front,
-  back,
-  links,
-}: {
-  started?: string;
-  ended?: string;
-  images: ImageType[];
-  title: string;
-  front: string;
-  back: string;
-  links?: LinkType[];
-}) {
+export default function FlipCard({ data }: { data: Project }) {
   const [flipped, setFlipped] = useState(false);
 
   const toggleFlip = () => {
@@ -57,34 +41,35 @@ export default function FlipCard({
             bottom: 0,
           }}
         >
-          {images.map((image, index) => (
-            <span key={index} className="image-wrapper">
-              <Image
-                src={image.src}
-                alt={image.description}
-                width={image.size ? image.size.width : 300}
-                height={image.size ? image.size.height : 200}
-              />
-            </span>
-          ))}
+          {data.images &&
+            data.images.map((image, index) => (
+              <span key={index} className="image-wrapper">
+                <Image
+                  src={image.src}
+                  alt={image.description}
+                  width={image.size ? image.size.width : 300}
+                  height={image.size ? image.size.height : 200}
+                />
+              </span>
+            ))}
           <Typography
             variant="body1"
             component="p"
             sx={{ textAlign: "center", fontWeight: "bold" }}
           >
-            {started
-              ? `Started ${dayjs(started).format("MMMM DD, YYYY")}.`
-              : null}
+            {data.started &&
+              `Started ${dayjs(data.started).format("MMMM DD, YYYY")}.`}
           </Typography>
           <Typography
             variant="body1"
             component="p"
             sx={{ textAlign: "center", fontWeight: "bold" }}
           >
-            {ended ? `Ended ${dayjs(ended).format("MMMM DD, YYYY")}.` : null}
+            {data.finished &&
+              `Finished ${dayjs(data.finished).format("MMMM DD, YYYY")}.`}
           </Typography>
           <Typography component="h3" variant="h4">
-            {title}
+            {data.title}
           </Typography>
           <motion.div
             style={{
@@ -96,7 +81,7 @@ export default function FlipCard({
             }}
           >
             <Typography component="p" variant="body2">
-              {front}
+              {data.description}
             </Typography>
           </motion.div>
           <br />
@@ -106,8 +91,8 @@ export default function FlipCard({
             component="p"
             sx={{ textAlign: "center" }}
           >
-            {links &&
-              links.map((link) => (
+            {data.links &&
+              data.links.map((link) => (
                 <span key={link.src}>
                   <Link href={link.src} target="_blank">
                     {link.description}
@@ -130,12 +115,12 @@ export default function FlipCard({
           }}
         >
           <Typography component="h3" variant="h3">
-            {title}
+            {data.title}
           </Typography>
           <br />
           <br />
           <Typography component="p" variant="body2">
-            {back}
+            Under construction
           </Typography>
         </div>
       </motion.div>
