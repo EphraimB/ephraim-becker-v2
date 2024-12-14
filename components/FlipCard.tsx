@@ -49,6 +49,7 @@ export default function FlipCard({ data }: { data: Project }) {
                   alt={image.description}
                   width={image.size ? image.size.width : 300}
                   height={image.size ? image.size.height : 200}
+                  loading="lazy"
                 />
               </span>
             ))}
