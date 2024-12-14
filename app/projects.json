@@ -1,0 +1,151 @@
+[
+    {
+        "id": 1,
+        "category": "Web development",
+        "title": "Virtual Friend app",
+        "description": "A web app that you can interact with a virtual friend. This was before ChatGPT came out.",
+        "technologies": "HTML, CSS, and JavaScript",
+        "details": "It was cool making a virtual friend that I can text to especially with the background switching to the time of day. I faced challenges having enough responses and questions.",
+        "takeaways": "I learnt that I can do a lot with web development including making characters and even making skies change based on your computer's clock just by using JavaScript and CSS.",
+        "images": [
+            {
+                "src": "/virtual-friend-screenshot.png",
+                "description": "Virtual friend app screenshot"
+            }
+        ],
+        "links": [
+            {
+                "src": "https://github.com/EphraimB/budgeting",
+                "description": "Click to download the prototype off GitHub"
+            },
+            {
+                "src": "https://ephraimb.github.io/Virtual-Friend/",
+                "description": "You can also view it live here"
+            }
+        ],
+        "started": "2015-11-10",
+        "finished": null
+    },
+    {
+        "id": 2,
+        "category": "Web development",
+        "title": "Budgeting app",
+        "description": "A web app that you can input all my habits and generates transactions for any date range based off the habits you input.",
+        "technologies": "ExpressJS, Postgres, NextJS",
+        "details": "I decided to make a budgeting app so I can know how much money I would have at any date. I faced challenges experimenting of different ways to do the cron jobs but I learnt a lot.",
+        "takeaways": "I learnt a lot about which technologies would work best and had lessons learnt about reverting if that technology doesn't work that good.",
+        "images": [
+            {
+                "src": "/budgeting-screenshot.png",
+                "description": "Budgeting app screenshot"
+            }
+        ],
+        "links": [
+            {
+                "src": "https://github.com/EphraimB/Virtual-Friend",
+                "description": "Click to download the prototype off GitHub"
+            }
+        ],
+        "started": "2023-02-20",
+        "finished": null
+    },
+    {
+        "id": 3,
+        "category": "3D modeling",
+        "title": "Beaming video",
+        "description": "I made a beaming video in Blender after one month of making it. I 3D modeled the transported controls and made the effects all in Blender. I beamed from my bedroom to my therapy office.",
+        "technologies": "Blender",
+        "details": "It was a challenge making the table for the transporter and took a month to make it but it was my first successful 3D model. I 3D modeled the table and put an image on top of it.",
+        "takeaways": "I was very happy about my success making a transporter table that looks very realistic and even recreating a Star Trek effect. Everything worked good with my green screen.",
+        "images": [
+            {
+                "src": "/beaming-video-screenshot.png",
+                "description": "Beaming video screenshot"
+            }
+        ],
+        "links": [
+            {
+                "src": "https://www.youtube.com/watch?v=6ktNUS7dt0M",
+                "description": "You can view the video on YouTube here"
+            }
+        ],
+        "started": "2016-10-26",
+        "finished": "2016-11-26"
+    },
+    {
+        "id": 4,
+        "category": "3D modeling",
+        "title": "Blob man video",
+        "description": "I made a blob man video in Blender and 3D modeled the blob man and the walking animation guided by a tutorial on Udemy",
+        "technologies": "Blender",
+        "details": "It took a lot of trial and error following the tutorials perfectly but the result was very good at the end.",
+        "takeaways": "I'm happy with my Blob man character that I animated.",
+        "images": [
+            {
+                "src": "/blob-man-video-screenshot.png",
+                "description": "Blob man video screenshot"
+            }
+        ],
+        "links": [
+            {
+                "src": "https://www.youtube.com/watch?v=G8un8IlF7_c",
+                "description": "You can view the video on YouTube here"
+            }
+        ],
+        "started": null,
+        "finished": "2024-04-08"
+    },
+    {
+        "id": 5,
+        "category": "Calculator apps",
+        "title": "Harry Potter currency converter",
+        "description": "I made a Harry Potter currency converter for the Ti-84 Plus graphing calculator that converts between Dollars and Gallions and vice versa. I created a lot of versions of it and coded it in Ti Basic.",
+        "technologies": "Ti Basic",
+        "details": "I made this cool Harry Potter app on my calculator in High School. I improved the user interface through different versions from a basic menu to a custom one.",
+        "takeaways": "I'm happy of the success I make making the Harry Potter app all these years in High School especially with the custom menu.",
+        "images": [
+            {
+                "src": "/wizardc7-screenshot.gif",
+                "description": "Harry Potter currency converter screenshot",
+                "size": {
+                    "width": 100,
+                    "height": 100
+                }
+            },
+            {
+                "src": "/wizardc7-color-screenshot.gif",
+                "description": "Harry Potter currency converter color screenshot",
+                "size": {
+                    "width": 200,
+                    "height": 200
+                }
+            }
+        ],
+        "links": [
+            {
+                "src": "/wizardc.zip",
+                "description": "You can download the latest completed version here. Version 7.3"
+            }
+        ],
+        "started": null,
+        "finished": "2014-09-01"
+    },
+    {
+        "id": 6,
+        "category": "VR development",
+        "title": "Beautiful Mind app",
+        "description": "Collaborated on the Beautiful Mind VR app, contributing to the design and implementation of a teleportation watch interface. This feature allowed users to navigate virtual environments seamlessly through an intuitive spatial UI. The project deepened my experience with immersive user interactions and highlighted the potential of VR for innovative solutions. Technologies used included Unity and C#.",
+        "technologies": "Unity, C#",
+        "details": "I contributed to my team at the bootcamp by making a watch that you can teleport just by pressing a button on the watch. I met a challenge on how the user would see the watch interface clearly. After much thought, I decided to expand the watch screen when clicked.",
+        "takeaways": "I liked my crative idea of having a smartwatch as an portal to another scene. It was my idea.",
+        "images": [
+            {
+                "src": "/beautiful-mind-vr-app.png",
+                "description": "A screenshot of the watch I created"
+            }
+        ],
+        "links": null,
+        "started": null,
+        "finished": "2023-01-01"
+    }
+]
