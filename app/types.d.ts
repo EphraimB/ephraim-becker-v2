@@ -16,6 +16,7 @@ export interface LinkType {
 
 export interface Status {
   text: string;
+  reason: string | null;
   color: string;
 }
 
