@@ -1,5 +1,5 @@
 import { Project } from "@/app/types";
-import { IconButton, Paper, Typography } from "@mui/material";
+import { Box, IconButton, Paper, Stack, Typography } from "@mui/material";
 import dayjs from "dayjs";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -7,6 +7,7 @@ import Link from "next/link";
 import { useState } from "react";
 import FlipToBackIcon from "@mui/icons-material/FlipToBack";
 import FlipToFrontIcon from "@mui/icons-material/FlipToFront";
+import StatusRibbon from "./StatusRibbon";
 
 export default function FlipCard({ data }: { data: Project }) {
   const [flipped, setFlipped] = useState(false);
@@ -29,9 +30,16 @@ export default function FlipCard({ data }: { data: Project }) {
         },
       }}
     >
-      <IconButton onClick={toggleFlip}>
-        {flipped ? <FlipToFrontIcon /> : <FlipToBackIcon />}
-      </IconButton>
+      <Stack direction="row" sx={{ justifyContent: "space-between" }}>
+        <IconButton onClick={toggleFlip}>
+          {flipped ? <FlipToFrontIcon /> : <FlipToBackIcon />}
+        </IconButton>
+        {data.status && (
+          <Box sx={{ position: "relative" }}>
+            <StatusRibbon text={data.status} color="orange" />
+          </Box>
+        )}
+      </Stack>
       <motion.div
         style={{
           transformStyle: "preserve-3d",

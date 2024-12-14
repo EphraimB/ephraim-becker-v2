@@ -2,6 +2,7 @@
     {
         "id": 1,
         "category": "Web development",
+        "status": "On hold",
         "title": "Virtual Friend app",
         "description": "A web app that you can interact with a virtual friend. This was before ChatGPT came out.",
         "technologies": "HTML, CSS, and JavaScript",
@@ -29,6 +30,7 @@
     {
         "id": 2,
         "category": "Web development",
+        "status": "On hold",
         "title": "Budgeting app",
         "description": "A web app that you can input all my habits and generates transactions for any date range based off the habits you input.",
         "technologies": "ExpressJS, Postgres, NextJS",
@@ -52,6 +54,7 @@
     {
         "id": 3,
         "category": "3D modeling",
+        "status": null,
         "title": "Beaming video",
         "description": "I made a beaming video in Blender after one month of making it. I 3D modeled the transported controls and made the effects all in Blender. I beamed from my bedroom to my therapy office.",
         "technologies": "Blender",
@@ -75,6 +78,7 @@
     {
         "id": 4,
         "category": "3D modeling",
+        "status": null,
         "title": "Blob man video",
         "description": "I made a blob man video in Blender and 3D modeled the blob man and the walking animation guided by a tutorial on Udemy",
         "technologies": "Blender",
@@ -98,6 +102,7 @@
     {
         "id": 5,
         "category": "Calculator apps",
+        "status": null,
         "title": "Harry Potter currency converter",
         "description": "I made a Harry Potter currency converter for the Ti-84 Plus graphing calculator that converts between Dollars and Gallions and vice versa. I created a lot of versions of it and coded it in Ti Basic.",
         "technologies": "Ti Basic",
@@ -133,6 +138,7 @@
     {
         "id": 6,
         "category": "VR development",
+        "status": null,
         "title": "Beautiful Mind app",
         "description": "Collaborated on the Beautiful Mind VR app, contributing to the design and implementation of a teleportation watch interface. This feature allowed users to navigate virtual environments seamlessly through an intuitive spatial UI. The project deepened my experience with immersive user interactions and highlighted the potential of VR for innovative solutions. Technologies used included Unity and C#.",
         "technologies": "Unity, C#",

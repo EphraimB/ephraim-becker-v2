@@ -17,6 +17,7 @@ export interface LinkType {
 export interface Project {
   id: number;
   category: string;
+  status: string;
   title: string;
   description: string;
   technologies: string;
