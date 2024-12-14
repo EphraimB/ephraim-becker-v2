@@ -20,6 +20,7 @@ export interface Project {
   title: string;
   description: string;
   technologies: string;
+  details: string;
   images: ImageType[] | null;
   links: LinkType[] | null;
   started: string | null;
