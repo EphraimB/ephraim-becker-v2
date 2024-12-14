@@ -14,10 +14,15 @@ export interface LinkType {
   description: string;
 }
 
+export interface Status {
+  text: string;
+  color: string;
+}
+
 export interface Project {
   id: number;
   category: string;
-  status: string | null;
+  status: Status;
   title: string;
   description: string;
   technologies: string;

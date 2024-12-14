@@ -36,7 +36,7 @@ export default function FlipCard({ data }: { data: Project }) {
         </IconButton>
         {data.status && (
           <Box sx={{ position: "relative" }}>
-            <StatusRibbon text={data.status} color="orange" />
+            <StatusRibbon text={data.status.text} color={data.status.color} />
           </Box>
         )}
       </Stack>
