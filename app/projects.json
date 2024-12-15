@@ -187,9 +187,9 @@
             "color": "green"
         },
         "title": "My mega website",
-        "description": "My first try at a mega website for myself. I kept improving my mega website and even connecting it to a MySQL database and putting it on GoDaddy and even had my own diary",
+        "description": "My first try at a mega website for myself which included a diary, my life, a fancy navigation wheel off the WheelNavJS library, my first try at a budgeting app, and more.",
         "technologies": "PHP, HTML, CSS, MySQL, GoDaddy, cron jobs, and JavaScript",
-        "details": "",
+        "details": "I kept improving my mega website and even connecting it to a MySQL database and putting it on GoDaddy and even had my own diary.",
         "takeaways": "I learnt a lot of what I did and didn't know about web programming and also learnt later on from this project why frameworks are important.",
         "images": [
             {
