@@ -177,5 +177,37 @@
         "links": null,
         "started": null,
         "finished": "2023-01-01"
+    },
+    {
+        "id": 7,
+        "category": "Web development",
+        "status": {
+            "text": "Finished",
+            "reason": null,
+            "color": "green"
+        },
+        "title": "My mega website",
+        "description": "My first try at a mega website for myself. I kept improving my mega website and even connecting it to a MySQL database and putting it on GoDaddy and even had my own diary",
+        "technologies": "PHP, HTML, CSS, MySQL, GoDaddy, cron jobs, and JavaScript",
+        "details": "",
+        "takeaways": "I learnt a lot of what I did and didn't know about web programming and also learnt later on from this project why frameworks are important.",
+        "images": [
+            {
+                "src": "/mega-website-homepage.png",
+                "description": "Screenshot of my mega website homepage",
+                "size": {
+                    "width": 240,
+                    "height": 135
+                }
+            }
+        ],
+        "links": [
+            {
+                "src": "https://github.com/EphraimB/ephraim-becker",
+                "description": "Click to check it out on GitHub"
+            }
+        ],
+        "started": "2021-07-31",
+        "finished": "2023-01-03"
     }
 ]
