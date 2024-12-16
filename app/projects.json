@@ -209,5 +209,35 @@
         ],
         "started": "2021-07-31",
         "finished": "2023-01-03"
+    },
+    {
+        "id": 8,
+        "category": "Computer building",
+        "status": {
+            "text": "Finished",
+            "reason": null,
+            "color": "green"
+        },
+        "title": "My custom built gaming PC",
+        "description": "I built my own gaming PC with the best specs for it's time.",
+        "technologies": "64GB RAM, Nvidia RTX 2080 Ti, Samsung 2TB SSD, Z370 Aorus Ultra",
+        "details": "I wanted a very powerful desktop and I thought it would be cool to build one myself. It was my first time building a computer and I got it right. It wasn't turning on initially until I realized tht a cable wasn't all the way in.",
+        "takeaways": "I learnt that I can build my own computer and what makes a computer run. It was cool putting the parts together like lego.",
+        "images": [
+            {
+                "src": "/custom-computer.jpg",
+                "description": "Photo of my custom computer",
+                "size": {
+                    "width": 252,
+                    "height": 336
+                }
+            },
+            {
+                "src": "/custom-computer-monitors.jpg",
+                "description": "Photo of my custom computer setup"
+            }
+        ],
+        "started": "2020-07-19",
+        "finished": "2020-07-20"
     }
 ]
