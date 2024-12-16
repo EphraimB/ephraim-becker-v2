@@ -8,6 +8,9 @@ import { useState } from "react";
 import FlipToBackIcon from "@mui/icons-material/FlipToBack";
 import FlipToFrontIcon from "@mui/icons-material/FlipToFront";
 import StatusRibbon from "./StatusRibbon";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
+import "swiper/swiper-bundle.css";
 
 export default function FlipCard({ data }: { data: Project }) {
   const [flipped, setFlipped] = useState(false);
@@ -17,6 +20,8 @@ export default function FlipCard({ data }: { data: Project }) {
   };
 
   const cardHeight = 600;
+
+  const showPagination = data.images && data.images.length > 1;
 
   return (
     <Paper
@@ -67,18 +72,25 @@ export default function FlipCard({ data }: { data: Project }) {
             bottom: 0,
           }}
         >
-          {data.images &&
-            data.images.map((image, index) => (
-              <span key={index} className="image-wrapper">
-                <Image
-                  src={image.src}
-                  alt={image.description}
-                  width={image.size ? image.size.width : 300}
-                  height={image.size ? image.size.height : 200}
-                  loading="lazy"
-                />
-              </span>
-            ))}
+          <Swiper
+            modules={[Pagination]}
+            spaceBetween={50}
+            slidesPerView={1}
+            pagination={showPagination ? { clickable: true } : false}
+          >
+            {data.images &&
+              data.images.map((image, index) => (
+                <SwiperSlide key={index} style={{ display: 'flex', justifyContent: 'center'}}>
+                  <Image
+                    src={image.src}
+                    alt={image.description}
+                    width={image.size ? image.size.width : 300}
+                    height={image.size ? image.size.height : 200}
+                    loading="lazy"
+                  />
+                </SwiperSlide>
+              ))}
+          </Swiper>
           <Typography
             variant="body1"
             component="p"
