@@ -65,6 +65,7 @@ export default function FlipCard({ data }: { data: Project }) {
           className="card-front"
           style={{
             backfaceVisibility: "hidden",
+            zIndex: flipped ? 0 : 1,
             position: "absolute",
             top: 0,
             left: 0,
@@ -72,25 +73,36 @@ export default function FlipCard({ data }: { data: Project }) {
             bottom: 0,
           }}
         >
-          <Swiper
-            modules={[Pagination]}
-            spaceBetween={50}
-            slidesPerView={1}
-            pagination={showPagination ? { clickable: true } : false}
+          <motion.div
+            style={{
+              opacity: flipped ? 0 : 1,
+              scale: flipped ? 0.8 : 1,
+              transition: "opacity 0.5s, scale 0.5s",
+            }}
           >
-            {data.images &&
-              data.images.map((image, index) => (
-                <SwiperSlide key={index} style={{ display: 'flex', justifyContent: 'center'}}>
-                  <Image
-                    src={image.src}
-                    alt={image.description}
-                    width={image.size ? image.size.width : 300}
-                    height={image.size ? image.size.height : 200}
-                    loading="lazy"
-                  />
-                </SwiperSlide>
-              ))}
-          </Swiper>
+            <Swiper
+              modules={[Pagination]}
+              spaceBetween={50}
+              slidesPerView={1}
+              pagination={showPagination ? { clickable: true } : false}
+            >
+              {data.images &&
+                data.images.map((image, index) => (
+                  <SwiperSlide
+                    key={index}
+                    style={{ display: "flex", justifyContent: "center" }}
+                  >
+                    <Image
+                      src={image.src}
+                      alt={image.description}
+                      width={image.size ? image.size.width : 300}
+                      height={image.size ? image.size.height : 200}
+                      loading="lazy"
+                    />
+                  </SwiperSlide>
+                ))}
+            </Swiper>
+          </motion.div>
           <Typography
             variant="body1"
             component="p"
@@ -146,6 +158,7 @@ export default function FlipCard({ data }: { data: Project }) {
           style={{
             transform: "rotateY(180deg)",
             backfaceVisibility: "hidden",
+            zIndex: flipped ? 1 : 0,
             position: "absolute",
             top: 0,
             left: 0,
