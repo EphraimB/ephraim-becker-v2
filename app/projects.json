@@ -177,5 +177,68 @@
         "links": null,
         "started": null,
         "finished": "2023-01-01"
+    },
+    {
+        "id": 7,
+        "category": "Web development",
+        "status": {
+            "text": "Finished",
+            "reason": null,
+            "color": "green"
+        },
+        "title": "My mega website",
+        "description": "My first try at a mega website for myself which included a diary, my life, a fancy navigation wheel off the WheelNavJS library, my first try at a budgeting app, and more.",
+        "technologies": "PHP, HTML, CSS, MySQL, GoDaddy, cron jobs, and JavaScript",
+        "details": "I kept improving my mega website and even connecting it to a MySQL database and putting it on GoDaddy and even had my own diary.",
+        "takeaways": "I learnt a lot of what I did and didn't know about web programming and also learnt later on from this project why frameworks are important.",
+        "images": [
+            {
+                "src": "/mega-website-homepage.png",
+                "description": "Screenshot of my mega website homepage",
+                "size": {
+                    "width": 240,
+                    "height": 135
+                }
+            }
+        ],
+        "links": [
+            {
+                "src": "https://github.com/EphraimB/ephraim-becker",
+                "description": "Click to check it out on GitHub"
+            }
+        ],
+        "started": "2021-07-31",
+        "finished": "2023-01-03"
+    },
+    {
+        "id": 8,
+        "category": "Computer building",
+        "status": {
+            "text": "Finished",
+            "reason": null,
+            "color": "green"
+        },
+        "title": "My custom built gaming PC",
+        "description": "I built my own gaming PC with the best specs for it's time.",
+        "technologies": "64GB RAM, Nvidia RTX 2080 Ti, Samsung 2TB SSD, Z370 Aorus Ultra",
+        "details": "I wanted a very powerful desktop and I thought it would be cool to build one myself. It was my first time building a computer and I got it right. It wasn't turning on initially until I realized tht a cable wasn't all the way in.",
+        "takeaways": "I learnt that I can build my own computer and what makes a computer run. It was cool putting the parts together like lego.",
+        "images": [
+            {
+                "src": "/custom-computer.jpg",
+                "description": "Photo of my custom computer",
+                "size": {
+                    "width": 252,
+                    "height": 336
+                }
+            },
+            {
+                "src": "/custom-computer-monitors.jpg",
+                "description": "Photo of my custom computer setup"
+            }
+        ],
+        "links": null,
+        "started": "2020-07-19",
+        "finished": "2020-07-20"
     }
 ]
