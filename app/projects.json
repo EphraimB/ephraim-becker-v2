@@ -35,8 +35,8 @@
         "id": 2,
         "category": "Web development",
         "status": {
-            "text": "On hold",
-            "reason": "focusing on academic commitments",
+            "text": "Ongoing",
+            "reason": "trying to finish it before I start college",
             "color": "orange"
         },
         "title": "Budgeting app",
@@ -238,7 +238,7 @@
             }
         ],
         "links": null,
-        "started": "2020-07-19",
-        "finished": "2020-07-20"
+        "started": "2019-07-16",
+        "finished": "2019-07-19"
     }
 ]
