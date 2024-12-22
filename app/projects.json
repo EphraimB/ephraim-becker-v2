@@ -36,7 +36,7 @@
         "category": "Web development",
         "status": {
             "text": "Ongoing",
-            "reason": "trying to finish it before I start college",
+            "reason": null,
             "color": "orange"
         },
         "title": "Budgeting app",
