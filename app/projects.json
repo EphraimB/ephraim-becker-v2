@@ -35,9 +35,9 @@
         "id": 2,
         "category": "Web development",
         "status": {
-            "text": "Ongoing",
+            "text": "Finished",
             "reason": null,
-            "color": "orange"
+            "color": "green"
         },
         "title": "Budgeting app",
         "description": "A web app that you can input all my habits and generates transactions for any date range based off the habits you input.",
@@ -52,12 +52,12 @@
         ],
         "links": [
             {
-                "src": "https://github.com/EphraimB/Virtual-Friend",
+                "src": "https://github.com/EphraimB/budgeting",
                 "description": "Click to download the prototype off GitHub"
             }
         ],
         "started": "2023-02-20",
-        "finished": null
+        "finished": "2024-12-24"
     },
     {
         "id": 3,
