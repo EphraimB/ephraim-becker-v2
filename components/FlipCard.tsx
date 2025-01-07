@@ -28,10 +28,19 @@ export default function FlipCard({ data }: { data: Project }) {
       sx={{
         p: 2,
         height: cardHeight,
+        background:
+          "linear-gradient(180deg, rgba(0, 0, 0, 0.15), rgba(255, 255, 255, 0.05))",
+        backdropFilter: "blur(10px)", // Glassmorphism effect
+        borderRadius: "10px",
+        border: "1px solid rgba(255, 255, 255, 0.2)", // Subtle border
+        boxShadow: "0 4px 20px rgba(0, 0, 0, 0.1)", // Soft shadow
+        color: "#fff", // Ensures text is legible
+        transition: "all 0.3s ease",
         "&:hover": {
-          boxShadow: "0 0 10px rgba(0, 0, 0, 0.2)",
+          background:
+            "linear-gradient(180deg, rgba(0, 0, 0, 0.2), rgba(255, 255, 255, 0.15))", // Slightly darkens on hover
+          boxShadow: "0 6px 30px rgba(0, 0, 0, 0.15)", // Softens shadow on hover
           transform: "translateY(-5px) scale(1.05)",
-          transition: "all 0.3s ease",
         },
       }}
     >
@@ -106,7 +115,12 @@ export default function FlipCard({ data }: { data: Project }) {
           <Typography
             variant="body1"
             component="p"
-            sx={{ textAlign: "center", fontWeight: "bold" }}
+            sx={{
+              textAlign: "center",
+              fontWeight: "bold",
+              textShadow: "1px 1px 4px rgba(0, 0, 0, 0.5)",
+              color: "#f1f1f1",
+            }}
           >
             {data.started &&
               `Started ${dayjs(data.started).format("MMMM DD, YYYY")}.`}
@@ -114,12 +128,25 @@ export default function FlipCard({ data }: { data: Project }) {
           <Typography
             variant="body1"
             component="p"
-            sx={{ textAlign: "center", fontWeight: "bold" }}
+            sx={{
+              textAlign: "center",
+              fontWeight: "bold",
+              textShadow: "1px 1px 4px rgba(0, 0, 0, 0.5)",
+              color: "#f1f1f1",
+            }}
           >
             {data.finished &&
               `Finished ${dayjs(data.finished).format("MMMM DD, YYYY")}.`}
           </Typography>
-          <Typography component="h3" variant="h4">
+          <Typography
+            component="h3"
+            variant="h4"
+            sx={{
+              textShadow: "1px 1px 4px rgba(0, 0, 0, 0.5)",
+              fontWeight: "bold",
+              color: "#f1f1f1",
+            }}
+          >
             {data.title}
           </Typography>
           <motion.div
@@ -131,7 +158,14 @@ export default function FlipCard({ data }: { data: Project }) {
               transition: "transform 0.5s, opacity 0.5s",
             }}
           >
-            <Typography component="p" variant="body2">
+            <Typography
+              component="p"
+              variant="body2"
+              sx={{
+                textShadow: "1px 1px 4px rgba(0, 0, 0, 0.5)",
+                color: "#f1f1f1",
+              }}
+            >
               {data.description}
             </Typography>
           </motion.div>
@@ -144,8 +178,20 @@ export default function FlipCard({ data }: { data: Project }) {
           >
             {data.links &&
               data.links.map((link) => (
-                <span key={link.src}>
-                  <Link href={link.src} target="_blank">
+                <span
+                  key={link.src}
+                  style={{
+                    textShadow: "1px 1px 4px rgba(0, 0, 0, 0.5)",
+                    color: "#f1f1f1",
+                  }}
+                >
+                  <Link
+                    href={link.src}
+                    target="_blank"
+                    style={{
+                      textShadow: "1px 1px 4px rgba(0, 0, 0, 0.5)",
+                    }}
+                  >
                     {link.description}
                   </Link>
                   <br />
@@ -166,22 +212,50 @@ export default function FlipCard({ data }: { data: Project }) {
             bottom: 0,
           }}
         >
-          <Typography component="h3" variant="h3">
+          <Typography
+            component="h3"
+            variant="h3"
+            sx={{
+              textShadow: "1px 1px 4px rgba(0, 0, 0, 0.5)",
+              color: "#f1f1f1",
+            }}
+          >
             {data.title}
           </Typography>
           <br />
           <br />
-          <Typography component="p" variant="body2">
+          <Typography
+            component="p"
+            variant="body2"
+            sx={{
+              textShadow: "1px 1px 4px rgba(0, 0, 0, 0.5)",
+              color: "#f1f1f1",
+            }}
+          >
             Technologies used: {data.technologies}
           </Typography>
           <br />
           <br />
-          <Typography component="p" variant="body2">
+          <Typography
+            component="p"
+            variant="body2"
+            sx={{
+              textShadow: "1px 1px 4px rgba(0, 0, 0, 0.5)",
+              color: "#f1f1f1",
+            }}
+          >
             Project details: {data.details}
           </Typography>
           <br />
           <br />
-          <Typography component="p" variant="body2">
+          <Typography
+            component="p"
+            variant="body2"
+            sx={{
+              textShadow: "1px 1px 4px rgba(0, 0, 0, 0.5)",
+              color: "#f1f1f1",
+            }}
+          >
             Key takeaways: {data.takeaways}
           </Typography>
         </div>

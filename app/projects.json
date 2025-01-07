@@ -3,38 +3,6 @@
         "id": 1,
         "category": "Web development",
         "status": {
-            "text": "On hold",
-            "reason": "prioritizing mental health and well-being",
-            "color": "orange"
-        },
-        "title": "Virtual Friend app",
-        "description": "A web app that you can interact with a virtual friend. This was before ChatGPT came out.",
-        "technologies": "HTML, CSS, and JavaScript",
-        "details": "It was cool making a virtual friend that I can text to especially with the background switching to the time of day. I faced challenges having enough responses and questions.",
-        "takeaways": "I learnt that I can do a lot with web development including making characters and even making skies change based on your computer's clock just by using JavaScript and CSS.",
-        "images": [
-            {
-                "src": "/virtual-friend-screenshot.png",
-                "description": "Virtual friend app screenshot"
-            }
-        ],
-        "links": [
-            {
-                "src": "https://github.com/EphraimB/budgeting",
-                "description": "Click to download the prototype off GitHub"
-            },
-            {
-                "src": "https://ephraimb.github.io/Virtual-Friend/",
-                "description": "You can also view it live here"
-            }
-        ],
-        "started": "2015-11-10",
-        "finished": null
-    },
-    {
-        "id": 2,
-        "category": "Web development",
-        "status": {
             "text": "Finished",
             "reason": null,
             "color": "green"
@@ -60,7 +28,7 @@
         "finished": "2024-12-24"
     },
     {
-        "id": 3,
+        "id": 2,
         "category": "3D modeling",
         "status": {
             "text": "Finished",
@@ -88,7 +56,7 @@
         "finished": "2016-11-26"
     },
     {
-        "id": 4,
+        "id": 3,
         "category": "3D modeling",
         "status": {
             "text": "Finished",
@@ -116,7 +84,7 @@
         "finished": "2024-04-08"
     },
     {
-        "id": 5,
+        "id": 4,
         "category": "Calculator apps",
         "status": {
             "text": "Finished",
@@ -156,7 +124,7 @@
         "finished": "2014-09-01"
     },
     {
-        "id": 6,
+        "id": 5,
         "category": "VR development",
         "status": {
             "text": "Finished",
@@ -179,7 +147,7 @@
         "finished": "2023-01-01"
     },
     {
-        "id": 7,
+        "id": 6,
         "category": "Web development",
         "status": {
             "text": "Finished",
@@ -211,7 +179,7 @@
         "finished": "2023-01-03"
     },
     {
-        "id": 8,
+        "id": 7,
         "category": "Computer building",
         "status": {
             "text": "Finished",
