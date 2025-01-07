@@ -91,7 +91,7 @@ export default function GlobalDrawer() {
                   }}
                 >
                   <ListItemIcon>
-                    <Work sx={{ color: "white" }} />
+                    <Work />
                   </ListItemIcon>
                   <ListItemText primary="Portfolio" />
                 </ListItemButton>
@@ -113,7 +113,7 @@ export default function GlobalDrawer() {
                   }}
                 >
                   <ListItemIcon>
-                    <FormatPaint sx={{ color: "white" }} />
+                    <FormatPaint />
                   </ListItemIcon>
                   <ListItemText primary="Concepts" />
                 </ListItemButton>
