@@ -59,7 +59,7 @@ export default function PortfolioControls() {
     <ThemeProvider theme={theme}>
       <Stack direction="column">
         <Stack direction="row" sx={{ justifyContent: "center" }}>
-          <Box sx={{ width: "10%" }}>
+          <Box sx={{ width: "auto", minWidth: "10%" }}>
             <FormControl fullWidth>
               <InputLabel>Category</InputLabel>
               <Select
