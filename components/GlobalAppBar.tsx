@@ -16,14 +16,21 @@ export default function GlobalAppBar() {
       <AppBar
         position="static"
         sx={{
-          background: "rgba(255, 255, 255, 0.6)",
+          background:
+            "linear-gradient(180deg, rgba(0, 0, 0, 0.15), rgba(255, 255, 255, 0.05))",
           backdropFilter: "blur(12px)",
           borderBottom: "1px solid rgba(255, 255, 255, 0.3)",
           boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
+          textShadow: "0px 1px 3px rgba(0, 0, 0, 0.5)",
           transition: "background 0.3s ease, box-shadow 0.3s ease",
           "&:hover": {
-            background: "rgba(255, 255, 255, 0.75)",
-            boxShadow: "0 6px 40px rgba(0, 0, 0, 0.2)",
+            background:
+              "linear-gradient(180deg, rgba(0, 0, 0, 0.35), rgba(255, 255, 255, 0.25))",
+            boxShadow: "0 4px 30px rgba(0, 0, 0, 0.15)",
+            textShadow: "0px 1px 3px rgba(0, 0, 0, 0.5)",
+          },
+          "&:focus-within": {
+            outline: "2px solid rgba(0, 0, 0, 0.2)", // Focus indication
           },
         }}
       >
