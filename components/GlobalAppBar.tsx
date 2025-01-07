@@ -13,7 +13,20 @@ export default function GlobalAppBar() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+      <AppBar
+        position="static"
+        sx={{
+          background: "rgba(255, 255, 255, 0.15)",
+          backdropFilter: "blur(10px)",
+          borderBottom: "1px solid rgba(255, 255, 255, 0.3)",
+          boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
+          transition: "background 0.3s ease, box-shadow 0.3s ease",
+          "&:hover": {
+            background: "rgba(255, 255, 255, 0.25)",
+            boxShadow: "0 6px 40px rgba(0, 0, 0, 0.2)",
+          },
+        }}
+      >
         <Toolbar>
           <IconButton
             size="large"
