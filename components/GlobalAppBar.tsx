@@ -7,9 +7,19 @@ import Typography from "@mui/material/Typography";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useDrawer } from "../context/DrawerContext";
+import { useEffect, useState } from "react";
 
 export default function GlobalAppBar() {
   const { isOpen, setIsOpen } = useDrawer();
+  const [supportsBackdropFilter, setSupportsBackdropFilter] = useState(false);
+
+  useEffect(() => {
+    if (window.CSS && window.CSS.supports) {
+      setSupportsBackdropFilter(
+        window.CSS.supports("backdrop-filter", "blur(12px)")
+      );
+    }
+  }, []);
 
   return (
     <Box sx={{ flexGrow: 1 }}>
@@ -18,7 +28,7 @@ export default function GlobalAppBar() {
         sx={{
           background:
             "linear-gradient(180deg, rgba(0, 0, 0, 0.15), rgba(255, 255, 255, 0.05))",
-          backdropFilter: "blur(12px)",
+          backdropFilter: supportsBackdropFilter ? "blur(12px)" : "none",
           borderBottom: "1px solid rgba(255, 255, 255, 0.3)",
           boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
           textShadow: "0px 1px 3px rgba(0, 0, 0, 0.5)",
