@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import dayjs from "dayjs";
 import Typography from "@mui/material/Typography";
+import { CircularProgress } from "@mui/material";
 
 export default function AgeComponent() {
   const [age, setAge] = useState<number | null>(null);
@@ -14,9 +15,13 @@ export default function AgeComponent() {
   }, []);
 
   return (
-    <Typography>
+    <Typography sx={{ textShadow: "1px 1px 3px rgba(0, 0, 0, 0.4)" }}>
       <span style={{ fontWeight: "bold" }}>Age: </span>
-      {age !== null ? age : "Loading..."}
+      {age !== null ? (
+        age
+      ) : (
+        <CircularProgress size={20} sx={{ marginLeft: 1 }} />
+      )}
     </Typography>
   );
 }
