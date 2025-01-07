@@ -118,7 +118,8 @@ export default function FlipCard({ data }: { data: Project }) {
             sx={{
               textAlign: "center",
               fontWeight: "bold",
-              textShadow: "1px 1px 5px rgba(0, 0, 0, 0.6)",
+              textShadow: "1px 1px 4px rgba(0, 0, 0, 0.5)",
+              color: "#f1f1f1",
             }}
           >
             {data.started &&
@@ -130,7 +131,8 @@ export default function FlipCard({ data }: { data: Project }) {
             sx={{
               textAlign: "center",
               fontWeight: "bold",
-              textShadow: "1px 1px 5px rgba(0, 0, 0, 0.6)",
+              textShadow: "1px 1px 4px rgba(0, 0, 0, 0.5)",
+              color: "#f1f1f1",
             }}
           >
             {data.finished &&
@@ -139,7 +141,11 @@ export default function FlipCard({ data }: { data: Project }) {
           <Typography
             component="h3"
             variant="h4"
-            sx={{ textShadow: "1px 1px 5px rgba(0, 0, 0, 0.6)" }}
+            sx={{
+              textShadow: "1px 1px 4px rgba(0, 0, 0, 0.5)",
+              fontWeight: "bold",
+              color: "#f1f1f1",
+            }}
           >
             {data.title}
           </Typography>
@@ -155,7 +161,10 @@ export default function FlipCard({ data }: { data: Project }) {
             <Typography
               component="p"
               variant="body2"
-              sx={{ textShadow: "1px 1px 5px rgba(0, 0, 0, 0.6)" }}
+              sx={{
+                textShadow: "1px 1px 4px rgba(0, 0, 0, 0.5)",
+                color: "#f1f1f1",
+              }}
             >
               {data.description}
             </Typography>
@@ -171,9 +180,18 @@ export default function FlipCard({ data }: { data: Project }) {
               data.links.map((link) => (
                 <span
                   key={link.src}
-                  style={{ textShadow: "1px 1px 5px rgba(0, 0, 0, 0.6)" }}
+                  style={{
+                    textShadow: "1px 1px 4px rgba(0, 0, 0, 0.5)",
+                    color: "#f1f1f1",
+                  }}
                 >
-                  <Link href={link.src} target="_blank">
+                  <Link
+                    href={link.src}
+                    target="_blank"
+                    style={{
+                      textShadow: "1px 1px 4px rgba(0, 0, 0, 0.5)",
+                    }}
+                  >
                     {link.description}
                   </Link>
                   <br />
@@ -197,7 +215,10 @@ export default function FlipCard({ data }: { data: Project }) {
           <Typography
             component="h3"
             variant="h3"
-            sx={{ textShadow: "1px 1px 5px rgba(0, 0, 0, 0.6)" }}
+            sx={{
+              textShadow: "1px 1px 4px rgba(0, 0, 0, 0.5)",
+              color: "#f1f1f1",
+            }}
           >
             {data.title}
           </Typography>
@@ -206,7 +227,10 @@ export default function FlipCard({ data }: { data: Project }) {
           <Typography
             component="p"
             variant="body2"
-            sx={{ textShadow: "1px 1px 5px rgba(0, 0, 0, 0.6)" }}
+            sx={{
+              textShadow: "1px 1px 4px rgba(0, 0, 0, 0.5)",
+              color: "#f1f1f1",
+            }}
           >
             Technologies used: {data.technologies}
           </Typography>
@@ -215,7 +239,10 @@ export default function FlipCard({ data }: { data: Project }) {
           <Typography
             component="p"
             variant="body2"
-            sx={{ textShadow: "1px 1px 5px rgba(0, 0, 0, 0.6)" }}
+            sx={{
+              textShadow: "1px 1px 4px rgba(0, 0, 0, 0.5)",
+              color: "#f1f1f1",
+            }}
           >
             Project details: {data.details}
           </Typography>
@@ -224,7 +251,10 @@ export default function FlipCard({ data }: { data: Project }) {
           <Typography
             component="p"
             variant="body2"
-            sx={{ textShadow: "1px 1px 5px rgba(0, 0, 0, 0.6)" }}
+            sx={{
+              textShadow: "1px 1px 4px rgba(0, 0, 0, 0.5)",
+              color: "#f1f1f1",
+            }}
           >
             Key takeaways: {data.takeaways}
           </Typography>
