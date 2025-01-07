@@ -16,13 +16,13 @@ export default function GlobalAppBar() {
       <AppBar
         position="static"
         sx={{
-          background: "rgba(255, 255, 255, 0.15)",
-          backdropFilter: "blur(10px)",
+          background: "rgba(255, 255, 255, 0.5)",
+          backdropFilter: "blur(15px)",
           borderBottom: "1px solid rgba(255, 255, 255, 0.3)",
           boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
           transition: "background 0.3s ease, box-shadow 0.3s ease",
           "&:hover": {
-            background: "rgba(255, 255, 255, 0.25)",
+            background: "rgba(255, 255, 255, 0.6)",
             boxShadow: "0 6px 40px rgba(0, 0, 0, 0.2)",
           },
         }}
