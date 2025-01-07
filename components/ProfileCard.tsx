@@ -1,6 +1,7 @@
 "use client";
 
-import { Paper, Stack, Typography } from "@mui/material";
+import { Paper, Typography } from "@mui/material";
+import Grid from "@mui/material/Grid2";
 import Image from "next/image";
 import AgeComponent from "./Age";
 import dayjs from "dayjs";
@@ -104,81 +105,98 @@ export default function ProfileCard() {
         Cedarhurst, NY, United States
       </Typography>
       <br />
-      <Stack spacing={2} direction="row" sx={{ justifyContent: "center" }}>
-        <Link
-          target="_blank"
-          rel="noopener"
-          className="link-hover-effect"
-          href="https://www.facebook.com/ephraim.becker/"
-        >
-          <Image
-            src="/Facebook_Logo_Primary.png"
-            alt="Facebook logo"
-            width={50}
-            height={50}
-          />
-        </Link>
-        <Link
-          target="_blank"
-          rel="noopener"
-          className="link-hover-effect"
-          href="https://www.instagram.com/ephraim.becker/"
-        >
-          <Image
-            src="/Instagram_Glyph_Gradient.png"
-            alt="Instagram logo"
-            width={50}
-            height={50}
-          />
-        </Link>
-        <Link
-          target="_blank"
-          rel="noopener"
-          className="link-hover-effect"
-          href="https://twitter.com/emb180"
-        >
-          <Image src="/logo-black.png" alt="X logo" width={50} height={50} />
-        </Link>
-        <Link
-          target="_blank"
-          rel="noopener"
-          className="link-hover-effect"
-          href="https://www.youtube.com/channel/UCIHxAXYLxYlNaQiv0do0bUg"
-        >
-          <Image
-            src="/yt_logo_rgb_light.png"
-            alt="YouTube logo"
-            width={100}
-            height={50}
-          />
-        </Link>
-        <Link
-          target="_blank"
-          rel="noopener"
-          className="link-hover-effect"
-          href="https://www.linkedin.com/in/ephraim-becker-3263b810b/"
-        >
-          <Image
-            src="/LI-In-Bug.png"
-            alt="Linkedin logo"
-            width={50}
-            height={50}
-          />
-        </Link>
-        <Link
-          target="_blank"
-          rel="noopener"
-          className="link-hover-effect"
-          href="https://github.com/EphraimB"
-        >
-          <Image
-            src="/github-mark.png"
-            alt="GitHub logo"
-            width={50}
-            height={50}
-          />
-        </Link>
-      </Stack>
+      <Grid
+        container
+        spacing={2}
+        size={{ sm: 3, md: 1 }}
+        sx={{ justifyContent: "center" }}
+      >
+        <Grid>
+          <Link
+            target="_blank"
+            rel="noopener"
+            className="link-hover-effect"
+            href="https://www.facebook.com/ephraim.becker/"
+          >
+            <Image
+              src="/Facebook_Logo_Primary.png"
+              alt="Facebook logo"
+              width={50}
+              height={50}
+            />
+          </Link>
+        </Grid>
+        <Grid>
+          <Link
+            target="_blank"
+            rel="noopener"
+            className="link-hover-effect"
+            href="https://www.instagram.com/ephraim.becker/"
+          >
+            <Image
+              src="/Instagram_Glyph_Gradient.png"
+              alt="Instagram logo"
+              width={50}
+              height={50}
+            />
+          </Link>
+        </Grid>
+        <Grid>
+          <Link
+            target="_blank"
+            rel="noopener"
+            className="link-hover-effect"
+            href="https://twitter.com/emb180"
+          >
+            <Image src="/logo-black.png" alt="X logo" width={50} height={50} />
+          </Link>
+        </Grid>
+        <Grid>
+          <Link
+            target="_blank"
+            rel="noopener"
+            className="link-hover-effect"
+            href="https://www.youtube.com/channel/UCIHxAXYLxYlNaQiv0do0bUg"
+          >
+            <Image
+              src="/yt_logo_rgb_light.png"
+              alt="YouTube logo"
+              width={100}
+              height={50}
+            />
+          </Link>
+        </Grid>
+        <Grid>
+          <Link
+            target="_blank"
+            rel="noopener"
+            className="link-hover-effect"
+            href="https://www.linkedin.com/in/ephraim-becker-3263b810b/"
+          >
+            <Image
+              src="/LI-In-Bug.png"
+              alt="Linkedin logo"
+              width={50}
+              height={50}
+            />
+          </Link>
+        </Grid>
+        <Grid>
+          <Link
+            target="_blank"
+            rel="noopener"
+            className="link-hover-effect"
+            href="https://github.com/EphraimB"
+          >
+            <Image
+              src="/github-mark.png"
+              alt="GitHub logo"
+              width={50}
+              height={50}
+            />
+          </Link>
+        </Grid>
+      </Grid>
     </Paper>
   );
 }
