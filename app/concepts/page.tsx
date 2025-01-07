@@ -9,6 +9,7 @@ import {
   CardContent,
   CardHeader,
 } from "@mui/material";
+import { ArrowForward } from "@mui/icons-material";
 
 export default function Concepts() {
   return (
@@ -45,8 +46,29 @@ export default function Concepts() {
               </Typography>
             </CardContent>
             <CardActions>
-              <Link href="concepts/ar-glasses" as="concepts/ar-glasses">
-                <Button size="small">Learn More</Button>
+              <Link href="concepts/ar-glasses">
+                <Button
+                  startIcon={<ArrowForward />}
+                  size="small"
+                  sx={{
+                    backgroundColor: "rgba(255, 255, 255, 0.1)", // Subtle background color
+                    borderRadius: "8px", // Smooth corners
+                    color: "blue", // Text color changed to blue
+                    padding: "8px 16px", // Comfortable padding
+                    "&:hover": {
+                      backgroundColor: "rgba(255, 255, 255, 0.2)", // Change background color on hover
+                      transform: "scale(1.05)", // Slight scale effect on hover
+                      transition: "background-color 0.3s, transform 0.3s ease", // Smooth transition
+                    },
+                    "&:focus": {
+                      outline: "3px solid rgba(255, 255, 255, 0.5)", // Outline for focus state
+                      outlineOffset: "2px",
+                    },
+                  }}
+                  aria-label="Learn more about AR glasses"
+                >
+                  Learn More
+                </Button>
               </Link>
             </CardActions>
           </Card>
