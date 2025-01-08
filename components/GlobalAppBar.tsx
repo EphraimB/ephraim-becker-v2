@@ -76,12 +76,13 @@ export default function GlobalAppBar() {
             />
           </IconButton>
           <Typography
-            variant="h6"
-            component="div"
+            variant="h3"
+            component="h1"
             sx={{
               flexGrow: 1,
               color: "#ffffff",
               textShadow: "1px 1px 2px rgba(0, 0, 0, 0.5)",
+              fontFamily: "Ephraimbecker, Roboto, sans-serif",
             }}
           >
             Ephraim Becker
