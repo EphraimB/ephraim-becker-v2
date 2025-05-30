@@ -91,12 +91,12 @@ export default function ProfileCard() {
         >
           Interests:{" "}
         </span>
-        <Stack direction="row" justifyContent="center" spacing={1}>
+        <Grid size={{ xs: 6, lg: 3 }}>
           <Chip icon={<ComputerIcon />} label="Technology" variant="outlined" />
           <Chip icon={<TheatersIcon />} label="Sci-fi/fantasy movies" variant="outlined" />
           <Chip icon={<MusicNoteIcon />} label="Music" variant="outlined" />
           <Chip icon={<PedalBikeIcon />} label="Biking" variant="outlined" />
-        </Stack>
+        </Grid>
       </Typography>
       <Typography
         component="p"
