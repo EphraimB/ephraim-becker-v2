@@ -6,6 +6,12 @@ import Image from "next/image";
 import AgeComponent from "./Age";
 import dayjs from "dayjs";
 import Link from "next/link";
+import Chip from '@mui/material/Chip';
+import Stack from '@mui/material/Stack';
+import ComputerIcon from '@mui/icons-material/Computer';
+import TheatersIcon from '@mui/icons-material/Theaters';
+import MusicNoteIcon from '@mui/icons-material/MusicNote';
+import PedalBikeIcon from '@mui/icons-material/PedalBike';
 
 export default function ProfileCard() {
   return (
@@ -85,7 +91,12 @@ export default function ProfileCard() {
         >
           Interests:{" "}
         </span>
-        Technology, Sci-fi/fantasy movies, music, and biking
+        <Stack direction="row" justifyContent="center" spacing={1}>
+          <Chip icon={<ComputerIcon />} label="Technology" variant="outlined" />
+          <Chip icon={<TheatersIcon />} label="Sci-fi/fantasy movies" variant="outlined" />
+          <Chip icon={<MusicNoteIcon />} label="Music" variant="outlined" />
+          <Chip icon={<PedalBikeIcon />} label="Biking" variant="outlined" />
+        </Stack>
       </Typography>
       <Typography
         component="p"
