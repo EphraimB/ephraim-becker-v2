@@ -7,11 +7,16 @@ import AgeComponent from "./Age";
 import dayjs from "dayjs";
 import Link from "next/link";
 import Chip from '@mui/material/Chip';
-import Stack from '@mui/material/Stack';
 import ComputerIcon from '@mui/icons-material/Computer';
 import TheatersIcon from '@mui/icons-material/Theaters';
 import MusicNoteIcon from '@mui/icons-material/MusicNote';
 import PedalBikeIcon from '@mui/icons-material/PedalBike';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import XIcon from '@mui/icons-material/X';
+import YouTubeIcon from '@mui/icons-material/YouTube';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 export default function ProfileCard() {
   return (
@@ -122,91 +127,66 @@ export default function ProfileCard() {
         size={{ sm: 3, md: 1 }}
         sx={{ justifyContent: "center" }}
       >
-        <Grid>
-          <Link
-            target="_blank"
-            rel="noopener"
-            className="link-hover-effect"
-            href="https://www.facebook.com/ephraim.becker/"
-          >
-            <Image
-              src="/Facebook_Logo_Primary.png"
-              alt="Facebook logo"
-              width={50}
-              height={50}
-            />
-          </Link>
-        </Grid>
-        <Grid>
-          <Link
-            target="_blank"
-            rel="noopener"
-            className="link-hover-effect"
-            href="https://www.instagram.com/ephraim.becker/"
-          >
-            <Image
-              src="/Instagram_Glyph_Gradient.png"
-              alt="Instagram logo"
-              width={50}
-              height={50}
-            />
-          </Link>
-        </Grid>
-        <Grid>
-          <Link
-            target="_blank"
-            rel="noopener"
-            className="link-hover-effect"
-            href="https://twitter.com/emb180"
-          >
-            <Image src="/logo-black.png" alt="X logo" width={50} height={50} />
-          </Link>
-        </Grid>
-        <Grid>
-          <Link
-            target="_blank"
-            rel="noopener"
-            className="link-hover-effect"
-            href="https://www.youtube.com/channel/UCIHxAXYLxYlNaQiv0do0bUg"
-          >
-            <Image
-              src="/yt_logo_rgb_light.png"
-              alt="YouTube logo"
-              width={100}
-              height={50}
-            />
-          </Link>
-        </Grid>
-        <Grid>
-          <Link
-            target="_blank"
-            rel="noopener"
-            className="link-hover-effect"
-            href="https://www.linkedin.com/in/ephraim-becker-3263b810b/"
-          >
-            <Image
-              src="/LI-In-Bug.png"
-              alt="Linkedin logo"
-              width={50}
-              height={50}
-            />
-          </Link>
-        </Grid>
-        <Grid>
-          <Link
-            target="_blank"
-            rel="noopener"
-            className="link-hover-effect"
-            href="https://github.com/EphraimB"
-          >
-            <Image
-              src="/github-mark.png"
-              alt="GitHub logo"
-              width={50}
-              height={50}
-            />
-          </Link>
-        </Grid>
+        <Chip
+          label="Facebook"
+          component="a"
+          target="_blank"
+          rel="noopener"
+          href="https://www.facebook.com/ephraim.becker/"
+          icon={<FacebookIcon />}
+          variant="outlined"
+          clickable
+        />
+        <Chip
+          label="Instagram"
+          component="a"
+          target="_blank"
+          rel="noopener"
+          href="https://www.instagram.com/ephraim.becker/"
+          icon={<InstagramIcon />}
+          variant="outlined"
+          clickable
+        />
+        <Chip
+          label="X (formally twitter)"
+          component="a"
+          target="_blank"
+          rel="noopener"
+          href="https://twitter.com/emb180"
+          icon={<XIcon />}
+          variant="outlined"
+          clickable
+        />
+        <Chip
+          label="YouTube"
+          component="a"
+          target="_blank"
+          rel="noopener"
+          href="https://www.youtube.com/channel/UCIHxAXYLxYlNaQiv0do0bUg"
+          icon={<YouTubeIcon />}
+          variant="outlined"
+          clickable
+        />
+        <Chip
+          label="LinkedIn"
+          component="a"
+          target="_blank"
+          rel="noopener"
+          href="https://www.linkedin.com/in/ephraim-becker/"
+          icon={<LinkedInIcon />}
+          variant="outlined"
+          clickable
+        />
+        <Chip
+          label="GitHub"
+          component="a"
+          target="_blank"
+          rel="noopener"
+          href="https://github.com/EphraimB"
+          icon={<GitHubIcon />}
+          variant="outlined"
+          clickable
+        />
       </Grid>
     </Paper>
   );
