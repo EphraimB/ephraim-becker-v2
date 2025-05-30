@@ -8,7 +8,6 @@ export default function Home() {
       <Container
         maxWidth="lg"
         sx={{
-          height: "100vh",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
