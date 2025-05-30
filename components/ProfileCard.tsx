@@ -52,8 +52,7 @@ export default function ProfileCard() {
         Ephraim Becker
       </Typography>
       <br />
-      <Grid container spacing={2} justifyContent="center">
-        {/* Row 1: Age, Birthdate, Location */}
+      <Grid container spacing={2}>
         <Grid size={{ xs: 6, md: 4 }}>
           <AgeComponent />
         </Grid>
@@ -63,15 +62,11 @@ export default function ProfileCard() {
         <Grid size={{ xs: 6, md: 4 }}>
           <Location />
         </Grid>
-
-        {/* Row 2: Interests spans the full width on mobile and desktop */}
-        <Grid size={{ xs: 12 }}>
+        <Grid size={{ xs: 12, md: 4 }}>
           <Interests />
         </Grid>
       </Grid>
-
       <br />
-
       <Grid
         container
         spacing={2}
