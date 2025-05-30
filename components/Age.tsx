@@ -36,7 +36,7 @@ export default function AgeComponent() {
   }, []);
 
   return (
-    <Paper sx={glassCardSx}>
+    <Paper sx={{ ...glassCardSx, cursor: "pointer" }}>
       <Typography component="h3" variant="h6" style={{ fontWeight: "bold" }}>Age</Typography>
       {age !== null ? (
         <Typography component="p" variant="body2">{countdown ? countdown : age}</Typography>
