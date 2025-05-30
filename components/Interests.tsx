@@ -5,7 +5,6 @@ import TheatersIcon from '@mui/icons-material/Theaters';
 import MusicNoteIcon from '@mui/icons-material/MusicNote';
 import PedalBikeIcon from '@mui/icons-material/PedalBike';
 import Chip from '@mui/material/Chip';
-import Grid from "@mui/material/Grid2";
 import Typography from "@mui/material/Typography";
 import { Paper, Stack } from "@mui/material";
 import { glassCardSx } from '@/styles/glassCard';
