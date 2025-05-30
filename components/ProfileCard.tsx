@@ -59,7 +59,15 @@ export default function ProfileCard() {
         <Location />
       </Grid>
       <br />
-      <SocialMedia />
+
+      <Grid
+        container
+        spacing={2}
+        size={{ xs: 12 }}
+        sx={{ justifyContent: "center" }}
+      >
+        <SocialMedia />
+      </Grid>
     </Paper>
   );
 }
