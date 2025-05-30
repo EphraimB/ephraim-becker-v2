@@ -85,7 +85,7 @@ export default function ProfileCard() {
         >
           Interests:{" "}
         </span>
-        Technology, Sci-fi/fantasy movies
+        Technology, Sci-fi/fantasy movies, music, and biking
       </Typography>
       <Typography
         component="p"
