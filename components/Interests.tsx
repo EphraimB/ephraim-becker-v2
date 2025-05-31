@@ -5,21 +5,20 @@ import TheatersIcon from '@mui/icons-material/Theaters';
 import MusicNoteIcon from '@mui/icons-material/MusicNote';
 import PedalBikeIcon from '@mui/icons-material/PedalBike';
 import Chip from '@mui/material/Chip';
-import Grid from "@mui/material/Grid2";
 import Typography from "@mui/material/Typography";
 import { Paper, Stack } from "@mui/material";
 import { glassCardSx } from '@/styles/glassCard';
 
 export default function Interests() {
     return (
-        <Paper sx={glassCardSx}>
+        <Paper sx={{ ...glassCardSx, maxWidth: 360, mx: "auto", cursor: "pointer" }}>
             <Typography
                 component="h3"
                 variant="h6"
                 style={{ fontWeight: "bold" }}
             >
                 Interests</Typography>
-            <Stack spacing={1}>
+            <Stack direction="row" spacing={1} flexWrap="wrap" justifyContent="center">
                 <Chip icon={<ComputerIcon />} label="Technology" variant="outlined" />
                 <Chip icon={<TheatersIcon />} label="Sci-fi/fantasy movies" variant="outlined" />
                 <Chip icon={<MusicNoteIcon />} label="Music" variant="outlined" />

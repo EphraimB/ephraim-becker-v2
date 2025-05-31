@@ -7,7 +7,7 @@ import { glassCardSx } from "@/styles/glassCard";
 
 export default function BirthDate() {
     return (
-        <Paper sx={glassCardSx}>
+        <Paper sx={{ ...glassCardSx, cursor: "pointer" }}>
             <Typography
                 component="h3"
                 variant="h6"
