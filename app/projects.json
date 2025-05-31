@@ -14,7 +14,7 @@
         "takeaways": "I learnt a lot about which technologies would work best and had lessons learnt about reverting if that technology doesn't work that good.",
         "images": [
             {
-                "src": "/budgeting-screenshot.png",
+                "src": "/projects/budgeting-screenshot.png",
                 "description": "Budgeting app screenshot"
             }
         ],
@@ -42,7 +42,7 @@
         "takeaways": "I was very happy about my success making a transporter table that looks very realistic and even recreating a Star Trek effect. Everything worked good with my green screen.",
         "images": [
             {
-                "src": "/beaming-video-screenshot.png",
+                "src": "/projects/beaming-video-screenshot.png",
                 "description": "Beaming video screenshot"
             }
         ],
@@ -70,7 +70,7 @@
         "takeaways": "I'm happy with my Blob man character that I animated.",
         "images": [
             {
-                "src": "/blob-man-video-screenshot.png",
+                "src": "/projects/blob-man-video-screenshot.png",
                 "description": "Blob man video screenshot"
             }
         ],
@@ -98,7 +98,7 @@
         "takeaways": "I'm happy of the success I make making the Harry Potter app all these years in High School especially with the custom menu.",
         "images": [
             {
-                "src": "/wizardc7-screenshot.gif",
+                "src": "/projects/wizardc7-screenshot.gif",
                 "description": "Harry Potter currency converter screenshot",
                 "size": {
                     "width": 100,
@@ -106,7 +106,7 @@
                 }
             },
             {
-                "src": "/wizardc7-color-screenshot.gif",
+                "src": "/projects/wizardc7-color-screenshot.gif",
                 "description": "Harry Potter currency converter color screenshot",
                 "size": {
                     "width": 200,
@@ -116,7 +116,7 @@
         ],
         "links": [
             {
-                "src": "/wizardc.zip",
+                "src": "/projects/downloads/wizardc.zip",
                 "description": "You can download the latest completed version here. Version 7.3"
             }
         ],
@@ -138,7 +138,7 @@
         "takeaways": "I liked my crative idea of having a smartwatch as an portal to another scene. It was my idea.",
         "images": [
             {
-                "src": "/beautiful-mind-vr-app.png",
+                "src": "/projects/beautiful-mind-vr-app.png",
                 "description": "A screenshot of the watch I created"
             }
         ],
@@ -161,7 +161,7 @@
         "takeaways": "I learnt a lot of what I did and didn't know about web programming and also learnt later on from this project why frameworks are important.",
         "images": [
             {
-                "src": "/mega-website-homepage.png",
+                "src": "/projects/mega-website-homepage.png",
                 "description": "Screenshot of my mega website homepage",
                 "size": {
                     "width": 240,
@@ -193,7 +193,7 @@
         "takeaways": "I learnt that I can build my own computer and what makes a computer run. It was cool putting the parts together like lego.",
         "images": [
             {
-                "src": "/custom-computer.jpg",
+                "src": "/projects/custom-computer.jpg",
                 "description": "Photo of my custom computer",
                 "size": {
                     "width": 252,
@@ -201,7 +201,7 @@
                 }
             },
             {
-                "src": "/custom-computer-monitors.jpg",
+                "src": "/projects/custom-computer-monitors.jpg",
                 "description": "Photo of my custom computer setup"
             }
         ],
