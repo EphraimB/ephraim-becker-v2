@@ -11,28 +11,41 @@ export default function AgeComponent() {
   const [countdown, setCountdown] = useState<string | null>(null);
 
   useEffect(() => {
-    const birthdate = "1996-07-19";
-    const today = dayjs();
+    const birthMonth = 6; // July (0-indexed)
+    const birthDay = 19;
 
-    const currentAge = dayjs().diff(birthdate, "year");
-    setAge(currentAge);
+    const today = dayjs().startOf("day");
+    const thisYear = today.year();
 
-    // Calculate next birthday
-    let nextBirthday = dayjs(birthdate).year(today.year());
-    if (nextBirthday.isBefore(today, "day")) {
-      nextBirthday = nextBirthday.add(1, "year");
-    }
+    const birthdayThisYear = dayjs()
+      .set("year", thisYear)
+      .set("month", birthMonth)
+      .set("date", birthDay)
+      .startOf("day");
+
+    const isBirthdayToday = birthdayThisYear.isSame(today, "day");
+
+    const nextBirthday = birthdayThisYear.isBefore(today)
+      ? birthdayThisYear.add(1, "year")
+      : birthdayThisYear;
+
+    const age = isBirthdayToday || birthdayThisYear.isBefore(today)
+      ? thisYear - 1996
+      : thisYear - 1996 - 1;
+
+    setAge(age);
 
     const daysUntilBirthday = nextBirthday.diff(today, "day");
 
-    if (daysUntilBirthday <= 60) {
-      setCountdown(`Turning ${currentAge + 1} in ${daysUntilBirthday} day${daysUntilBirthday !== 1 ? "s" : ""} (${nextBirthday.format("MMM D, YYYY")})`);
+    if (isBirthdayToday) {
+      setCountdown(`🎉 It's your birthday today! Turning ${age}`);
+    } else if (daysUntilBirthday <= 60) {
+      setCountdown(
+        `Turning ${age + 1} in ${daysUntilBirthday} day${daysUntilBirthday !== 1 ? "s" : ""}`
+      );
+    } else {
+      setCountdown(null); // no message if > 60 days away
     }
-
-    if (daysUntilBirthday === 0) {
-      setCountdown(`🎉 It's your birthday today! Turning ${currentAge}`);
-    }
-
   }, []);
 
   return (
