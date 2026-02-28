@@ -1,10 +1,9 @@
 "use client";
 
 import { Paper, Typography } from "@mui/material";
-import Grid from "@mui/material/Grid2";
+import Grid from "@mui/material/Grid";
 import Image from "next/image";
 import AgeComponent from "./Age";
-import BirthDate from "./BirthDate";
 import Interests from "./Interests";
 import Location from "./Location";
 import SocialMedia from "./SocialMedia";
@@ -56,9 +55,9 @@ export default function ProfileCard() {
         <Grid size={{ xs: 6, md: 4 }}>
           <AgeComponent />
         </Grid>
-        <Grid size={{ xs: 6, md: 4 }}>
+        {/* <Grid size={{ xs: 6, md: 4 }}>
           <BirthDate />
-        </Grid>
+        </Grid> */}
         <Grid size={{ xs: 6, md: 4 }}>
           <Location />
         </Grid>
