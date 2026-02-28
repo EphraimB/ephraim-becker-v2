@@ -4,7 +4,6 @@ import { Paper, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid";
 import Image from "next/image";
 import AgeComponent from "./Age";
-import BirthDate from "./BirthDate";
 import Interests from "./Interests";
 import Location from "./Location";
 import SocialMedia from "./SocialMedia";
