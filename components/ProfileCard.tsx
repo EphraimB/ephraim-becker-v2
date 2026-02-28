@@ -1,7 +1,7 @@
 "use client";
 
 import { Paper, Typography } from "@mui/material";
-import Grid from "@mui/material/Grid2";
+import Grid from "@mui/material/Grid";
 import Image from "next/image";
 import AgeComponent from "./Age";
 import BirthDate from "./BirthDate";
