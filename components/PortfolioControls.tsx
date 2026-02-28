@@ -11,7 +11,7 @@ import {
   Stack,
   Typography,
 } from "@mui/material";
-import Grid from "@mui/material/Grid2";
+import Grid from "@mui/material/Grid";
 import projects from "@/app/projects.json";
 import FlipCard from "./FlipCard";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
@@ -48,7 +48,7 @@ export default function PortfolioControls() {
 
   // Extract unique categories
   const uniqueCategories = Array.from(
-    new Set(projects.map((project) => project.category))
+    new Set(projects.map((project) => project.category)),
   );
 
   const handleCategoryChange = (event: SelectChangeEvent<string>) => {
