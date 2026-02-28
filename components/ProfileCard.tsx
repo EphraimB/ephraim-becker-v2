@@ -56,9 +56,9 @@ export default function ProfileCard() {
         <Grid size={{ xs: 6, md: 4 }}>
           <AgeComponent />
         </Grid>
-        <Grid size={{ xs: 6, md: 4 }}>
+        {/* <Grid size={{ xs: 6, md: 4 }}>
           <BirthDate />
-        </Grid>
+        </Grid> */}
         <Grid size={{ xs: 6, md: 4 }}>
           <Location />
         </Grid>
